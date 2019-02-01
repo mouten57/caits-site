@@ -8,9 +8,9 @@ const Header = props => (
       <strong>CaitlinMayConsulting.com</strong>
     </Link>
     <nav>
-      {/* <a className="menu-link" onClick={props.onToggleMenu} href="javascript:;">
+      <a className="menu-link" onClick={props.onToggleMenu} href="javascript:;">
         Menu
-      </a> */}
+      </a>
     </nav>
   </header>
 )

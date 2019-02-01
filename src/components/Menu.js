@@ -33,11 +33,11 @@ const Menu = props => (
             Contact Me
           </a>
         </li>
-        {/* <li>
+        <li>
           <a href="#" className="button fit">
             Log In
           </a>
-        </li> */}
+        </li>
       </ul>
     </div>
     <a className="close" onClick={props.onToggleMenu} href="javascript:;">

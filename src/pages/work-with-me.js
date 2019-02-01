@@ -8,7 +8,7 @@ import pic08 from '../assets/images/pic08.jpg'
 import pic09 from '../assets/images/pic09.jpg'
 import pic10 from '../assets/images/pic10.jpg'
 
-const Landing = props => (
+const WorkWithMe = props => (
   <Layout>
     <Helmet>
       <title>Work With Me - Caitlin Outen</title>
@@ -118,4 +118,4 @@ const Landing = props => (
   </Layout>
 )
 
-export default Landing
+export default WorkWithMe

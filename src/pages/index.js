@@ -25,55 +25,55 @@ class HomeIndex extends React.Component {
 
         <Banner />
 
-        {/* <div id="main">
+        <div id="main">
           <section id="one" className="tiles">
             <article style={{ backgroundImage: `url(${pic01})` }}>
               <header className="major">
-                <h3>Courageous</h3>
-                <p>Ipsum dolor sit amet</p>
+                <h3>Resumes</h3>
+                <p>Revitalize your resume and get noticed!</p>
               </header>
-              <Link to="/landing" className="link primary" />
+              <Link to="/resumes" className="link primary" />
             </article>
             <article style={{ backgroundImage: `url(${pic02})` }}>
               <header className="major">
-                <h3>Bold</h3>
-                <p>feugiat amet tempus</p>
+                <h3>Cover Letters</h3>
+                <p>Is your cover letter killing your job search?</p>
               </header>
-              <Link to="/landing" className="link primary" />
+              <Link to="/cover-letters" className="link primary" />
             </article>
             <article style={{ backgroundImage: `url(${pic03})` }}>
               <header className="major">
-                <h3>Sassy</h3>
+                <h3>Interview Coaching</h3>
                 <p>Lorem etiam nullam</p>
               </header>
-              <Link to="/landing" className="link primary" />
+              <Link to="/interview-coaching" className="link primary" />
             </article>
             <article style={{ backgroundImage: `url(${pic04})` }}>
               <header className="major">
-                <h3>Spirited</h3>
+                <h3>Targeted Job Searches</h3>
                 <p>Nisl sed aliquam</p>
               </header>
-              <Link to="/landing" className="link primary" />
+              <Link to="/job-search" className="link primary" />
             </article>
             <article style={{ backgroundImage: `url(${pic05})` }}>
               <header className="major">
-                <h3>Energetic</h3>
+                <h3>Company Research</h3>
                 <p>Ipsum dolor sit amet</p>
               </header>
-              <Link to="/landing" className="link primary" />
+              <Link to="/company-research" className="link primary" />
             </article>
             <article style={{ backgroundImage: `url(${pic06})` }}>
               <header className="major">
-                <h3>Nappy</h3>
+                <h3>Executive Biographies</h3>
                 <p>Feugiat amet tempus</p>
               </header>
-              <Link to="/landing" className="link primary" />
+              <Link to="/executive-biographies" className="link primary" />
             </article>
           </section>
           <section id="two">
             <div className="inner">
               <header className="major">
-                <h2>More Stuff</h2>
+                <h2>More Stuff/ maybe One customer review?</h2>
               </header>
               <p>
                 Nullam et orci eu lorem consequat tincidunt vivamus et sagittis
@@ -86,14 +86,14 @@ class HomeIndex extends React.Component {
               </p>
               <ul className="actions">
                 <li>
-                  <Link to="/work-with-me" className="button next">
-                    Get Started
+                  <Link to="/success-stories" className="button next">
+                    more testimonials...
                   </Link>
                 </li>
               </ul>
             </div>
           </section>
-        </div> */}
+        </div>
       </Layout>
     )
   }

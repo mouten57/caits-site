@@ -1,20 +1,17 @@
 import React from 'react'
+import './Banner.css'
 
 const Banner = props => (
   <section id="banner" className="major">
     <div className="inner">
-      <header className="major">
-        <h1>Coming soon...</h1>
-        {/* <h1>Hi, my name is Caitlin!</h1> */}
+      <header className="major header">
+        <h1>Caitlin May Consulting</h1>
       </header>
-      <div className="content">
-        {/* <p>
-          Something will go here about how I, Caitlin Outen,
-          <br /> can totally improve your life for only 100 dollars!{' '}
-        </p> */}
+      <div className="content index">
+        <p>The Career Corner</p>
         <ul className="actions">
           <li>
-            {/* <a href="#one" className="button next scrolly">
+            {/* <a href="#one" className="button next scrolly see-more">
               See More
             </a> */}
           </li>
