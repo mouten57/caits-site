@@ -7,7 +7,7 @@ import pic11 from '../assets/images/pic11.jpg'
 const Generic = props => (
   <Layout>
     <Helmet>
-      <title>About - Caitlin Outen</title>
+      <title>Generic Template</title>
       <meta name="description" content="Generic Page" />
     </Helmet>
 
@@ -15,7 +15,7 @@ const Generic = props => (
       <section id="one">
         <div className="inner">
           <header className="major">
-            <h1>About Me</h1>
+            <h1>Generic Template</h1>
           </header>
           <span className="image main">
             <img src={pic11} alt="" />
