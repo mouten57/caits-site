@@ -15,7 +15,7 @@ const About = props => (
       <meta name="description" content="About" />
     </Helmet>
 
-    <BannerLanding headerName="About" />
+    <BannerLanding headerName="About" class="about" />
 
     <div id="main">
       <section id="one">

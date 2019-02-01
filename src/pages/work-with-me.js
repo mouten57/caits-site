@@ -15,7 +15,7 @@ const WorkWithMe = props => (
       <meta name="description" content="Landing Page" />
     </Helmet>
 
-    <BannerLanding headerName="Work With Me" />
+    <BannerLanding headerName="Work With Me" class="workwithme" />
 
     <div id="main">
       <section id="one">

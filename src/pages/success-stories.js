@@ -19,6 +19,7 @@ const Landing = props => (
       headerName="Success Stories"
       p1="I have many happy customers, see what they have to say "
       p2=""
+      class="success"
     />
 
     <div id="main">
