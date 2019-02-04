@@ -15,13 +15,13 @@ class HomeIndex extends React.Component {
   render() {
     return (
       <Layout>
-        <Helmet
-          title="Caitlin Outen"
-          meta={[
-            { name: 'description', content: 'Sample' },
-            { name: 'keywords', content: 'sample, something' },
-          ]}
-        />
+        <Helmet>
+          <title>Caitlin Outen</title>
+          <meta
+            name="google-site-verification"
+            content="oH5ZbBJcgJ_DX1T0C9fcZmFzWM3AtZICwguJtV1iuSQ"
+          />
+        </Helmet>
 
         <Banner />
 
