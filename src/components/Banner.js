@@ -5,6 +5,11 @@ const Banner = props => (
     <div className="inner">
       <header className="major">
         <h1>Coming soon...</h1>
+
+        <a href="#contact" className="button next scrolly">
+          Want to know more?
+        </a>
+
         {/* <h1>Hi, my name is Caitlin!</h1> */}
       </header>
       <div className="content">
