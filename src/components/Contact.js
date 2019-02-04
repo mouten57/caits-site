@@ -6,7 +6,7 @@ const Contact = props => (
       <section>
         <form
           method="post"
-          action="https://formspree.io/caitlin.outen523@gmail.com"
+          action="https://formspree.io/caitlin@caitlinmayconsulting.com"
           method="POST"
         >
           <div className="field half first">
