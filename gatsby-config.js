@@ -1,11 +1,22 @@
+const config = require('./data/Siteconfig')
+
 module.exports = {
   siteMetadata: {
-    title: "Cait Outen",
-    author: "Matt Outen",
-    description: "A professional website for career services."
+    siteUrl: config.siteUrl,
+    title: config.siteTitle,
+    author: config.author,
+    description: config.description,
+    copyright: config.copyright,
+    menuLinks: config.menuLinks,
   },
   plugins: [
     'gatsby-plugin-react-helmet',
+    {
+      resolve: 'gatsby-plugin-google-analytics',
+      options: {
+        trackingId: config.googleAnalyticsID,
+      },
+    },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -15,10 +26,10 @@ module.exports = {
         background_color: '#663399',
         theme_color: '#663399',
         display: 'minimal-ui',
-        icon: 'src/assets/images/website-icon.png', // This path is relative to the root of the site.
+        icon: 'src/assets/img/website-icon.png', // This path is relative to the root of the site.
       },
     },
     'gatsby-plugin-sass',
-    'gatsby-plugin-offline'
+    'gatsby-plugin-offline',
   ],
 }
