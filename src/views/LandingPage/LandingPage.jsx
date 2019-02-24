@@ -34,12 +34,12 @@ class LandingPage extends React.Component {
       <div>
         <Header
           color="transparent"
-          brand="Material Kit PRO React"
-          links={<HeaderLinks dropdownHoverColor="info" />}
+          brand="Caitlin May Consulting"
+          links={<HeaderLinks dropdownHoverColor="rose" />}
           fixed
           changeColorOnScroll={{
             height: 300,
-            color: 'info',
+            color: 'rose',
           }}
           {...rest}
         />

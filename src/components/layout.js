@@ -46,7 +46,7 @@ const Layout = ({ children, location, classes }) => {
       render={data => (
         <>
           <Head />
-          <Header />
+          {/* Need to add Header on each page. Can include variations more easily. */}
           {content}
           <Footer
             theme="white"
@@ -56,41 +56,35 @@ const Layout = ({ children, location, classes }) => {
                   <List className={classes.list}>
                     <ListItem className={classes.inlineBlock}>
                       <a
-                        href="https://www.twitter.com/cakedinbutter"
+                        href="https://www.linkedin.com/in/caitlinouten/"
                         className={(classes.icon, classes.block)}
                       >
-                        <i className="fab fa-2x fa-twitter" />
+                        <i class="fab fa-2x fa-linkedin" />
                       </a>
                     </ListItem>
+
                     <ListItem className={classes.inlineBlock}>
                       <a
-                        href="https://www.instagram.com/cakedinbutter"
+                        href="https://www.facebook.com/groups/1100616443453255/"
                         className={(classes.icon, classes.block)}
                       >
                         <i className="fab fa-2x fa-instagram" />
                       </a>
                     </ListItem>
-                    {/* <ListItem className={classes.inlineBlock}>
-                      <a
-                        href="//blog.creative-tim.com/"
-                        className={classes.block}
-                      >
-                        Blog
-                      </a>
-                    </ListItem>
+
                     <ListItem className={classes.inlineBlock}>
                       <a
-                        href="https://www.creative-tim.com/license"
-                        className={classes.block}
+                        href="https://twitter.com/caitlinmayokc"
+                        className={(classes.icon, classes.block)}
                       >
-                        Licenses
+                        <i className="fab fa-2x fa-twitter" />
                       </a>
-                    </ListItem> */}
+                    </ListItem>
                   </List>
                 </div>
                 <div className={classes.right}>
                   &copy; {1900 + new Date().getYear()} by{' '}
-                  <a href="https://www.creative-tim.com">Matt Outen</a>
+                  <a href="https://www.mattouten.com">Matt Outen</a>
                 </div>
               </div>
             }
