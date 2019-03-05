@@ -17,11 +17,14 @@ import HeaderLinks from '../../components/Header/HeaderLinks.jsx'
 import Parallax from '../../components/Parallax/Parallax.jsx'
 
 import landingPageStyle from '../../assets/jss/views/landingPageStyle.jsx'
+import profilePageStyle from '../../assets/jss/views/profilePageStyle.jsx'
 
 // Sections for this page
 import SectionProduct from './Sections/SectionProduct.jsx'
 import SectionTeam from './Sections/SectionTeam.jsx'
 import SectionWork from './Sections/SectionWork.jsx'
+
+import logo from '../../assets/img/website-icon.png'
 
 class LandingPage extends React.Component {
   componentDidMount() {
@@ -30,50 +33,19 @@ class LandingPage extends React.Component {
   }
   render() {
     const { classes, ...rest } = this.props
+    const imageClasses = classNames(
+      classes.imgRaised,
+      classes.imgRoundedCircle,
+      classes.imgFluid
+    )
+    const navImageClasses = classNames(classes.imgRounded, classes.imgGallery)
     return (
-      <div>
-        <Header
-          color="transparent"
-          brand="Caitlin May Consulting"
-          links={<HeaderLinks dropdownHoverColor="rose" />}
-          fixed
-          changeColorOnScroll={{
-            height: 300,
-            color: 'rose',
-          }}
-          {...rest}
-        />
-
-        <Parallax image={require('../../assets/img/bg8.jpg')} filter="dark">
-          <div className={classes.container}>
-            <GridContainer>
-              <GridItem xs={12} sm={6} md={6}>
-                <h1 className={classes.title}>Your Story Starts With Us.</h1>
-                <h4>
-                  Every landing page needs a small description after the big
-                  bold title, that's why we added this text here. Add here all
-                  the information that can make you or your product create the
-                  first impression.
-                </h4>
-                <br />
-                <Button
-                  color="danger"
-                  size="lg"
-                  href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <i className="fas fa-play" />
-                  Watch video
-                </Button>
-              </GridItem>
-            </GridContainer>
-          </div>
-        </Parallax>
+      <div style={{ margin: '0', padding: '0' }}>
         <div className={classNames(classes.main, classes.mainRaised)}>
           <div className={classes.container}>
-            <SectionProduct />
             <SectionTeam />
+            <SectionProduct />
+
             <SectionWork />
           </div>
         </div>
@@ -82,4 +54,4 @@ class LandingPage extends React.Component {
   }
 }
 
-export default withStyles(landingPageStyle)(LandingPage)
+export default withStyles(profilePageStyle)(LandingPage)

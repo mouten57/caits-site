@@ -5,6 +5,7 @@ import config from '../../data/Siteconfig'
 
 import Head from './Head'
 import Header from './Header/Header.jsx'
+import HeaderLinks from './Header/HeaderLinks.jsx'
 import Footer from './Footer/Footer.jsx'
 
 import contactUsStyle from '../assets/jss/views/contactUsStyle.jsx'
@@ -12,8 +13,9 @@ import contactUsStyle from '../assets/jss/views/contactUsStyle.jsx'
 import withStyles from '@material-ui/core/styles/withStyles'
 import List from '@material-ui/core/List'
 import ListItem from '@material-ui/core/ListItem'
+import logo from '../assets/img/website-icon.png'
 
-const Layout = ({ children, location, classes }) => {
+const Layout = ({ children, location, classes, ...rest }) => {
   let content
 
   if (location && location.pathname === '/') {
@@ -46,7 +48,40 @@ const Layout = ({ children, location, classes }) => {
       render={data => (
         <>
           <Head />
-          {/* Need to add Header on each page. Can include variations more easily. */}
+          <Header
+            color="white"
+            brand="Caitlin May Consulting"
+            links={<HeaderLinks dropdownHoverColor="rose" />}
+            fixed
+            changeColorOnScroll={{
+              height: 200,
+              color: 'rose',
+            }}
+            {...rest}
+          />
+          <div
+            style={{
+              backgroundColor: '#eeeeee',
+              height: '80vw',
+              maxHeight: '500px',
+              minHeight: '320px',
+              position: 'relative',
+              marginBottom: '30px',
+              display: 'flex',
+              alignContent: 'center',
+              justifyContent: 'center',
+            }}
+          >
+            {' '}
+            <img
+              src={logo}
+              style={{
+                height: '50vw',
+                maxHeight: '380px',
+                marginTop: '80px',
+              }}
+            />
+          </div>
           {content}
           <Footer
             theme="white"
