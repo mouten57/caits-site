@@ -36,30 +36,16 @@ class SectionTeam extends React.Component {
   render() {
     const { classes } = this.props
     return (
-      <div
-        className={`${classes.team} ${classes.section}`}
-        style={{
-          backgroundImage: `url(${profilepic})`,
-          backgroundPositionX: '20%',
-          backgroundPositionY: 'center',
-
-          backgroundSize: '40%',
-          backgroundRepeat: 'no-repeat',
-        }}
-      >
+      <div className={`${classes.team} ${classes.section}`}>
         <div className={classes.container}>
-          <GridContainer>
-            <GridItem
-              xs={12}
-              sm={12}
-              md={12}
-              className={`${classes.mlAuto} ${classes.mrAuto} ${
-                classes.textCenter
-              }`}
-            />
-          </GridContainer>
-          <GridContainer direction={'row-reverse'}>
-            <GridItem xs={12} sm={5} md={5}>
+          <GridContainer direction={'row'}>
+            <GridItem xs={12} sm={7} md={7}>
+              <img
+                src={profilepic}
+                style={{ width: '100%', borderRadius: '20px' }}
+              />
+            </GridItem>
+            <GridItem xs={12} sm={5} md={5} style={{ alignSelf: 'center' }}>
               <Card profile>
                 <CardBody>
                   <h4 className={classes.cardTitle}>

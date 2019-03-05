@@ -66,7 +66,7 @@ const Layout = ({ children, location, classes, ...rest }) => {
               maxHeight: '500px',
               minHeight: '320px',
               position: 'relative',
-              marginBottom: '30px',
+              marginBottom: '20px',
               display: 'flex',
               alignContent: 'center',
               justifyContent: 'center',
