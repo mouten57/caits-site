@@ -84,7 +84,7 @@ const Layout = ({ children, location, classes, ...rest }) => {
           </div>
           {content}
           <Footer
-            theme="white"
+            theme="transparent"
             content={
               <div>
                 <div className={classes.left}>
