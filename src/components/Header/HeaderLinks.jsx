@@ -52,7 +52,10 @@ function HeaderLinks({ ...props }) {
   }
 
   const smoothScroll = (e, target) => {
-    if (window.location.pathname === '/sections') {
+    if (
+      typeof window !== 'undefined' &&
+      window.location.pathname === '/sections'
+    ) {
       var isMobile = navigator.userAgent.match(
         /(iPad)|(iPhone)|(iPod)|(android)|(webOS)/i
       )

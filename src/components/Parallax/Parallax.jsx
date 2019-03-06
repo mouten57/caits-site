@@ -13,8 +13,8 @@ class Parallax extends React.Component {
   constructor(props) {
     super(props)
     let windowScrollTop
-    if (window.innerWidth >= 768) {
-      windowScrollTop = window.pageYOffset / 3
+    if (typeof window !== 'undefined' && window.innerWidth >= 768) {
+      windowScrollTop = typeof window !== 'undefined' && window.pageYOffset / 3
     } else {
       windowScrollTop = 0
     }
@@ -24,21 +24,24 @@ class Parallax extends React.Component {
     this.resetTransform = this.resetTransform.bind(this)
   }
   componentDidMount() {
-    if (window.innerWidth >= 768) {
-      var windowScrollTop = window.pageYOffset / 3
+    if (typeof window !== 'undefined' && window.innerWidth >= 768) {
+      var windowScrollTop =
+        typeof window !== 'undefined' && window.pageYOffset / 3
       this.setState({
         transform: 'translate3d(0,' + windowScrollTop + 'px,0)',
       })
-      window.addEventListener('scroll', this.resetTransform)
+      typeof window !== 'undefined' &&
+        window.addEventListener('scroll', this.resetTransform)
     }
   }
   componentWillUnmount() {
-    if (window.innerWidth >= 768) {
+    if (typeof window !== 'undefined' && window.innerWidth >= 768) {
       window.removeEventListener('scroll', this.resetTransform)
     }
   }
   resetTransform() {
-    var windowScrollTop = window.pageYOffset / 3
+    var windowScrollTop =
+      typeof window !== 'undefined' && window.pageYOffset / 3
     this.setState({
       transform: 'translate3d(0,' + windowScrollTop + 'px,0)',
     })

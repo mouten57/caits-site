@@ -125,7 +125,7 @@ class ContactUsPage extends React.Component {
     })
   }
   componentDidMount() {
-    window.scrollTo(0, 0)
+    typeof window !== 'undefined' && window.scrollTo(0, 0)
     document.body.scrollTop = 0
   }
   render() {

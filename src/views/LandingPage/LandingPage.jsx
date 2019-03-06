@@ -28,7 +28,7 @@ import logo from '../../assets/img/website-icon-white.png'
 
 class LandingPage extends React.Component {
   componentDidMount() {
-    window.scrollTo(0, 0)
+    typeof window !== 'undefined' && window.scrollTo(0, 0)
     document.body.scrollTop = 0
   }
   render() {
