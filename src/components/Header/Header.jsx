@@ -17,6 +17,7 @@ import Menu from '@material-ui/icons/Menu'
 import Close from '@material-ui/icons/Close'
 // core components
 import headerStyle from '../../assets/jss/components/headerStyle'
+import logo from '../../assets/img/website-icon.png'
 
 class Header extends React.Component {
   constructor(props) {
@@ -69,8 +70,12 @@ class Header extends React.Component {
     })
     return (
       <AppBar className={appBarClasses}>
-        <Toolbar className={classes.container}>
-          <Button className={classes.title}>
+        <img
+          src={logo}
+          style={{ height: '60px', margin: '0 0 0 5px', paddingLeft: '5px' }}
+        />
+        <Toolbar className={classes.container} style={{ marginLeft: '0' }}>
+          <Button className={classes.title} style={{ paddingLeft: '8px' }}>
             <Link to="/">{brand}</Link>
           </Button>
           <Hidden smDown implementation="css" className={classes.hidden}>

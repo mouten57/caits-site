@@ -7,18 +7,18 @@ import withStyles from '@material-ui/core/styles/withStyles'
 import GridContainer from '../../../components/Grid/GridContainer.jsx'
 import GridItem from '../../../components/Grid/GridItem.jsx'
 import Card from '../../../components/Card/Card.jsx'
-import CardAvatar from '../../../components/Card/CardAvatar.jsx'
-import CardHeader from '../../../components/Card/CardHeader.jsx'
+// import CardAvatar from '../../../components/Card/CardAvatar.jsx'
+// import CardHeader from '../../../components/Card/CardHeader.jsx'
 import CardBody from '../../../components/Card/CardBody.jsx'
-import CardFooter from '../../../components/Card/CardFooter.jsx'
+// import CardFooter from '../../../components/Card/CardFooter.jsx'
 
-import Muted from '../../../components/Typography/Muted.jsx'
+//import Muted from '../../../components/Typography/Muted.jsx'
 import Button from '../../../components/CustomButtons/Button.jsx'
 
-import cardProfile1Square from '../../../assets/img/faces/card-profile1-square.jpg'
-import cardProfile2Square from '../../../assets/img/faces/card-profile2-square.jpg'
-import cardProfile4Square from '../../../assets/img/faces/card-profile4-square.jpg'
-import cardProfile6Square from '../../../assets/img/faces/card-profile6-square.jpg'
+// import cardProfile1Square from '../../../assets/img/faces/card-profile1-square.jpg'
+// import cardProfile2Square from '../../../assets/img/faces/card-profile2-square.jpg'
+// import cardProfile4Square from '../../../assets/img/faces/card-profile4-square.jpg'
+// import cardProfile6Square from '../../../assets/img/faces/card-profile6-square.jpg'
 
 import teamsStyle from '../../../assets/jss/views/sectionsSections/teamsStyle.jsx'
 import teamStyle from '../../../assets/jss/views/landingPageSections/teamStyle.jsx'
@@ -26,7 +26,7 @@ import profilepic from '../../../assets/img/profilepic.jpeg'
 
 const style = {
   ...teamsStyle,
-  // ...teamStyle,
+  ...teamStyle,
   justifyContentCenter: {
     justifyContent: 'center',
   },
@@ -43,6 +43,7 @@ class SectionTeam extends React.Component {
               <img
                 src={profilepic}
                 style={{ width: '100%', borderRadius: '20px' }}
+                alt="profile pic"
               />
             </GridItem>
             <GridItem xs={12} sm={5} md={5} style={{ alignSelf: 'center' }}>

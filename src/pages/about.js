@@ -1,13 +1,10 @@
 import React from 'react'
 import Layout from '../components/layout'
+import AboutUsPage from '../views/AboutUsPage/AboutUsPage'
 
 const About = () => (
   <Layout>
-    <div id="main" className="alt">
-      <section id="one">
-        <div className="inner">About Page</div>
-      </section>
-    </div>
+    <AboutUsPage />
   </Layout>
 )
 

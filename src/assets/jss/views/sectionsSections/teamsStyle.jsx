@@ -11,7 +11,7 @@ import {
   blackColor,
   whiteColor,
   hexToRgb,
-} from '../../material-kit-pro-react'
+} from '../../material-kit-pro-react.jsx'
 
 const teamsSection = {
   container,

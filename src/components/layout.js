@@ -3,10 +3,14 @@ import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
 import config from '../../data/Siteconfig'
 
+import Button from './CustomButtons/Button'
 import Head from './Head'
 import Header from './Header/Header.jsx'
 import HeaderLinks from './Header/HeaderLinks.jsx'
 import Footer from './Footer/Footer.jsx'
+import GridContainer from './Grid/GridContainer'
+import GridItem from './Grid/GridItem'
+import Parallax from './Parallax/Parallax'
 
 import contactUsStyle from '../assets/jss/views/contactUsStyle.jsx'
 
@@ -55,33 +59,11 @@ const Layout = ({ children, location, classes, ...rest }) => {
             fixed
             changeColorOnScroll={{
               height: 200,
-              color: 'rose',
+              color: 'white',
             }}
             {...rest}
           />
-          <div
-            style={{
-              backgroundColor: '#eeeeee',
-              height: '80vw',
-              maxHeight: '500px',
-              minHeight: '320px',
-              position: 'relative',
-              marginBottom: '30px',
-              display: 'flex',
-              alignContent: 'center',
-              justifyContent: 'center',
-            }}
-          >
-            {' '}
-            <img
-              src={logo}
-              style={{
-                height: '50vw',
-                maxHeight: '380px',
-                marginTop: '80px',
-              }}
-            />
-          </div>
+
           {content}
           <Footer
             theme="transparent"
@@ -94,7 +76,7 @@ const Layout = ({ children, location, classes, ...rest }) => {
                         href="https://www.linkedin.com/in/caitlinouten/"
                         className={(classes.icon, classes.block)}
                       >
-                        <i class="fab fa-2x fa-linkedin" />
+                        <i className="fab fa-2x fa-linkedin" />
                       </a>
                     </ListItem>
 
