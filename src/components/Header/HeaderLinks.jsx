@@ -108,7 +108,7 @@ function HeaderLinks({ ...props }) {
       </ListItem>
       <ListItem className={classes.listItem}>
         <Button
-          href="#praise"
+          href="/praise"
           className={classes.navLink}
           // onClick={e => e.preventDefault()}
           color="transparent"
