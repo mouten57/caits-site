@@ -275,4 +275,4 @@ class Contact extends React.Component {
   }
 }
 
-export default Contact
+export default withRoot(withStyles(contactUsStyle)(Contact))
