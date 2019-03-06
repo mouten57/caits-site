@@ -5,6 +5,7 @@ import classNames from 'classnames'
 import PropTypes from 'prop-types'
 // @material-ui/core components
 import withStyles from '@material-ui/core/styles/withStyles'
+import withRoot from '../../withRoot'
 // @material-ui/icons
 
 // core components
@@ -68,4 +69,4 @@ Card.propTypes = {
   product: PropTypes.bool,
 }
 
-export default withStyles(cardStyle)(Card)
+export default withRoot(withStyles(cardStyle)(Card))

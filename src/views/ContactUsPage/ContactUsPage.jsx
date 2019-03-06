@@ -29,6 +29,8 @@ import Footer from '../../components/Footer/Footer.jsx'
 
 import contactUsStyle from '../../assets/jss/views/contactUsStyle.jsx'
 
+import withRoot from '../../withRoot'
+
 const CustomSkinMap = withScriptjs(
   withGoogleMap(props => (
     <GoogleMap
@@ -271,4 +273,4 @@ class ContactUsPage extends React.Component {
   }
 }
 
-export default withStyles(contactUsStyle)(ContactUsPage)
+export default withRoot(withStyles(contactUsStyle)(ContactUsPage))

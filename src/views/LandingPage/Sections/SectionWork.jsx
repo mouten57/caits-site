@@ -12,6 +12,8 @@ import Button from '../../../components/CustomButtons/Button.jsx'
 
 import workStyle from '../../../assets/jss/views/landingPageSections/workStyle.jsx'
 
+import withRoot from '../../../withRoot'
+
 class SectionWork extends React.Component {
   constructor(props) {
     super(props)
@@ -114,4 +116,4 @@ class SectionWork extends React.Component {
   }
 }
 
-export default withStyles(workStyle)(SectionWork)
+export default withRoot(withStyles(workStyle)(SectionWork))

@@ -3,6 +3,7 @@ import React from 'react'
 import classNames from 'classnames'
 // @material-ui/core components
 import withStyles from '@material-ui/core/styles/withStyles'
+import withRoot from '../../../withRoot'
 // @material-ui/icons
 import Gesture from '@material-ui/icons/Gesture'
 import Build from '@material-ui/icons/Build'
@@ -91,4 +92,4 @@ function SectionServices(props) {
   )
 }
 
-export default withStyles(servicesStyle)(SectionServices)
+export default withRoot(withStyles(servicesStyle)(SectionServices))

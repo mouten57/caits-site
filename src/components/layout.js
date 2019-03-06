@@ -15,6 +15,7 @@ import Parallax from './Parallax/Parallax'
 import contactUsStyle from '../assets/jss/views/contactUsStyle.jsx'
 
 import withStyles from '@material-ui/core/styles/withStyles'
+import withRoot from '../withRoot'
 import List from '@material-ui/core/List'
 import ListItem from '@material-ui/core/ListItem'
 import logo from '../assets/img/website-icon.png'
@@ -112,4 +113,4 @@ const Layout = ({ children, location, classes, ...rest }) => {
   )
 }
 
-export default withStyles(contactUsStyle)(Layout)
+export default withRoot(withStyles(contactUsStyle)(Layout))

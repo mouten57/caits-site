@@ -6,6 +6,7 @@ import GridContainer from '../../../components/Grid/GridContainer.jsx'
 import GridItem from '../../../components/Grid/GridItem.jsx'
 // @material-ui/core components
 import withStyles from '@material-ui/core/styles/withStyles'
+import withRoot from '../../../withRoot'
 
 import descriptionStyle from '../../../assets/jss/views/aboutUsSections/descriptionStyle.jsx'
 
@@ -32,4 +33,4 @@ function SectionDescription(props) {
   )
 }
 
-export default withStyles(descriptionStyle)(SectionDescription)
+export default withRoot(withStyles(descriptionStyle)(SectionDescription))
