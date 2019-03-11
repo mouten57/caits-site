@@ -19,6 +19,10 @@ const Head = () => {
         href="https://use.fontawesome.com/releases/v5.0.10/css/all.css"
         rel="stylesheet"
       />
+      <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      />
 
       <html lang="en" />
     </Helmet>

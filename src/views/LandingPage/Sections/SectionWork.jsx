@@ -1,18 +1,13 @@
 import React from 'react'
 // @material-ui/core components
 import withStyles from '@material-ui/core/styles/withStyles'
-
 // @material-ui/icons
-
 // core components
 import GridContainer from '../../../components/Grid/GridContainer.jsx'
 import GridItem from '../../../components/Grid/GridItem.jsx'
 import CustomInput from '../../../components/CustomInput/CustomInput.jsx'
 import Button from '../../../components/CustomButtons/Button.jsx'
-
 import workStyle from '../../../assets/jss/views/landingPageSections/workStyle.jsx'
-
-import withRoot from '../../../withRoot'
 
 class SectionWork extends React.Component {
   constructor(props) {
@@ -116,4 +111,4 @@ class SectionWork extends React.Component {
   }
 }
 
-export default withRoot(withStyles(workStyle)(SectionWork))
+export default withStyles(workStyle)(SectionWork)

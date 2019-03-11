@@ -6,7 +6,6 @@ import GridContainer from '../../../components/Grid/GridContainer.jsx'
 import GridItem from '../../../components/Grid/GridItem.jsx'
 // @material-ui/core components
 import withStyles from '@material-ui/core/styles/withStyles'
-import withRoot from '../../../withRoot'
 
 import officeStyle from '../../../assets/jss/views/aboutUsSections/officeStyle.jsx'
 
@@ -96,4 +95,4 @@ function SectionOffice(props) {
   )
 }
 
-export default withRoot(withStyles(officeStyle)(SectionOffice))
+export default withStyles(officeStyle)(SectionOffice)

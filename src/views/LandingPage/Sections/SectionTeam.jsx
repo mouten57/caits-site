@@ -1,7 +1,6 @@
 import React from 'react'
 // @material-ui/core components
 import withStyles from '@material-ui/core/styles/withStyles'
-import withRoot from '../../../withRoot'
 // @material-ui/icons
 // import  from "@material-ui/icons/";
 // core components
@@ -71,4 +70,4 @@ class SectionTeam extends React.Component {
   }
 }
 
-export default withRoot(withStyles(style)(SectionTeam))
+export default withStyles(style)(SectionTeam)

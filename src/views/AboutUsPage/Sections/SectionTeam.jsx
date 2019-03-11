@@ -11,7 +11,6 @@ import CardFooter from '../../../components/Card/CardFooter.jsx'
 import Button from '../../../components/CustomButtons/Button.jsx'
 // @material-ui/core components
 import withStyles from '@material-ui/core/styles/withStyles'
-import withRoot from '../../../withRoot'
 
 import teamStyle from '../../../assets/jss/views/aboutUsSections/teamStyle.jsx'
 
@@ -168,4 +167,4 @@ function SectionTeam(props) {
   )
 }
 
-export default withRoot(withStyles(teamStyle)(SectionTeam))
+export default withStyles(teamStyle)(SectionTeam)

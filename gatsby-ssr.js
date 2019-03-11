@@ -1,12 +1,9 @@
-/**
- * Implement Gatsby's SSR (Server Side Rendering) APIs in this file.
- *
- * See: https://www.gatsbyjs.org/docs/ssr-apis/
- */
-const React = require('react')
-const { renderToString } = require('react-dom/server')
-const JssProvider = require('react-jss/lib/JssProvider').default
-const getPageContext = require('./src/getPageContext').default
+// See https://github.com/mui-org/material-ui/tree/master/examples/gatsby
+
+const React = require('react'),
+  { renderToString } = require('react-dom/server'),
+  JssProvider = require('react-jss/lib/JssProvider').default,
+  getPageContext = require('./src/getPageContext').default
 
 function replaceRenderer({
   bodyComponent,
@@ -14,13 +11,12 @@ function replaceRenderer({
   setHeadComponents,
 }) {
   // Get the context of the page to collected side effects.
-  const muiPageContext = getPageContext()
-
-  const bodyHTML = renderToString(
-    <JssProvider registry={muiPageContext.sheetsRegistry}>
-      {bodyComponent}
-    </JssProvider>
-  )
+  const muiPageContext = getPageContext(),
+    bodyHTML = renderToString(
+      <JssProvider registry={muiPageContext.sheetsRegistry}>
+        {bodyComponent}
+      </JssProvider>
+    )
 
   replaceBodyHTMLString(bodyHTML)
   setHeadComponents([
@@ -36,5 +32,3 @@ function replaceRenderer({
 }
 
 exports.replaceRenderer = replaceRenderer
-
-// You can delete this file if you're not using it

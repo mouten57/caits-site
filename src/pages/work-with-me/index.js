@@ -1,6 +1,6 @@
 import React from 'react'
-import Layout from '../components/layout'
-import workWithMe from '../assets/img/work-with-me.png'
+import Layout from '../../components/layout'
+import workWithMe from '../../assets/img/work-with-me.png'
 
 const WorkWithMe = () => (
   <Layout>

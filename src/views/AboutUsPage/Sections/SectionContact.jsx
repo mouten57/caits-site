@@ -6,7 +6,7 @@ import FormControl from '@material-ui/core/FormControl'
 import MenuItem from '@material-ui/core/MenuItem'
 import Select from '@material-ui/core/Select'
 import withStyles from '@material-ui/core/styles/withStyles'
-import withRoot from '../../../withRoot'
+
 // @material-ui/icons
 // core components
 import GridContainer from '../../../components/Grid/GridContainer.jsx'
@@ -145,4 +145,4 @@ class SectionContact extends React.Component {
   }
 }
 
-export default withRoot(withStyles(contactStyle)(SectionContact))
+export default withStyles(contactStyle)(SectionContact)

@@ -1,3 +1,4 @@
+// See https://github.com/mui-org/material-ui/tree/master/examples/gatsby
 import { SheetsRegistry } from 'jss'
 import {
   createMuiTheme,

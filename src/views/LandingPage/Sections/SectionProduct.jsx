@@ -1,7 +1,6 @@
 import React from 'react'
 // @material-ui/core components
 import withStyles from '@material-ui/core/styles/withStyles'
-import withRoot from '../../../withRoot'
 
 // @material-ui/icons
 import Chat from '@material-ui/icons/Chat'
@@ -68,4 +67,4 @@ class SectionProduct extends React.Component {
   }
 }
 
-export default withRoot(withStyles(productStyle)(SectionProduct))
+export default withStyles(productStyle)(SectionProduct)

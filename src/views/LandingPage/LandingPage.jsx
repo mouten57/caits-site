@@ -3,23 +3,11 @@ import React from 'react'
 import classNames from 'classnames'
 // @material-ui/core components
 import withStyles from '@material-ui/core/styles/withStyles'
-import withRoot from '../../withRoot'
-// import List from '@material-ui/core/List'
-// import ListItem from '@material-ui/core/ListItem'
-// @material-ui/icons
-//import Favorite from '@material-ui/icons/Favorite'
-// core components
-// import Header from '../../components/Header/Header.jsx'
-// import Footer from '../../components/Footer/Footer.jsx'
 import GridContainer from '../../components/Grid/GridContainer.jsx'
 import GridItem from '../../components/Grid/GridItem.jsx'
-//import Button from '../../components/CustomButtons/Button.jsx'
-//import HeaderLinks from '../../components/Header/HeaderLinks.jsx'
 import Parallax from '../../components/Parallax/Parallax.jsx'
-
 import landingPageStyle from '../../assets/jss/views/landingPageStyle.jsx'
 //import profilePageStyle from '../../assets/jss/views/profilePageStyle.jsx'
-
 // Sections for this page
 import SectionProduct from './Sections/SectionProduct.jsx'
 import SectionTeam from './Sections/SectionTeam.jsx'
@@ -82,4 +70,4 @@ class LandingPage extends React.Component {
   }
 }
 
-export default withRoot(withStyles(landingPageStyle)(LandingPage))
+export default withStyles(landingPageStyle)(LandingPage)

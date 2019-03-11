@@ -3,7 +3,6 @@ import React from 'react'
 import classNames from 'classnames'
 // @material-ui/core components
 import withStyles from '@material-ui/core/styles/withStyles'
-import withRoot from '../../withRoot'
 import List from '@material-ui/core/List'
 import ListItem from '@material-ui/core/ListItem'
 // @material-ui/icons
@@ -73,4 +72,4 @@ class AboutUsPage extends React.Component {
   }
 }
 
-export default withRoot(withStyles(aboutUsStyle)(AboutUsPage))
+export default withStyles(aboutUsStyle)(AboutUsPage)
