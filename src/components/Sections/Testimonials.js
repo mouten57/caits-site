@@ -54,10 +54,10 @@ function SectionTestimonials({ ...props }) {
                 classes.textCenter
               }`}
             >
-              <h2 className={classes.title}>Our Clients Love Us</h2>
+              <h2 className={classes.title}>Love From Clients</h2>
               <h5 className={classes.description}>
-                You need more information? Check what other persons are saying
-                about our product. They are very happy with their purchase.
+                Check what other people are saying about our product. They are
+                very happy with their purchase.
               </h5>
             </GridItem>
           </GridContainer>

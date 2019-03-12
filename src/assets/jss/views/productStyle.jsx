@@ -8,8 +8,8 @@ import {
   cardTitle,
   grayColor,
   roseColor,
-} from '../../material-kit-pro-react.jsx'
-import a from '..'
+} from '../material-kit-pro-react.jsx'
+
 import tooltipsStyle from '../tooltipsStyle.jsx'
 import imagesStyles from '../imagesStyles.jsx'
 import customSelectStyle from '../customSelectStyle.jsx'

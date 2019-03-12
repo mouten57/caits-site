@@ -28,7 +28,7 @@ const teamsSection = {
     textAlign: 'center',
   },
   team: {
-    padding: '80px 0',
+    padding: '40px 0',
     '& h5$description,& h5$descriptionWhite': {
       marginBottom: '80px',
     },

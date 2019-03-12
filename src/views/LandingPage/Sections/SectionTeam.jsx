@@ -42,7 +42,12 @@ class SectionTeam extends React.Component {
             <GridItem xs={12} sm={7} md={7}>
               <img
                 src={profilepic}
-                style={{ width: '100%', borderRadius: '20px' }}
+                style={{
+                  width: '100%',
+                  borderRadius: '20px',
+                  maxHeight: '700px',
+                  maxWidth: '480px',
+                }}
                 alt="profile pic"
               />
             </GridItem>
@@ -57,8 +62,8 @@ class SectionTeam extends React.Component {
                     Join me to learn how to unlock your inner greatness andbuild
                     a profitable business you love!
                   </p>
-                  <Button color="rose" round style={{ width: '100%' }}>
-                    <p style={{ width: '100%' }}>Learn More!</p>
+                  <Button color="rose" fullWidth>
+                    <p>Learn More!</p>
                   </Button>
                 </CardBody>
               </Card>

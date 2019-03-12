@@ -20,13 +20,24 @@ class SectionContact extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      specialitySelect: '1',
+      formFields: {
+        name: '',
+        email: '',
+        message: '',
+        phone: '',
+      },
     }
   }
-  handleSpeciality = event => {
-    this.setState({ [event.target.name]: event.target.value })
+
+  handleChange = e => {
+    let formFields = { ...this.state.formFields }
+    formFields[e.target.name] = e.target.value
+    this.setState({
+      formFields,
+    })
   }
   render() {
+    const { name, email, phone, message } = this.state
     const { classes } = this.props
     return (
       <div className={classes.aboutUs}>
@@ -37,106 +48,72 @@ class SectionContact extends React.Component {
             className={classNames(classes.mrAuto, classes.mlAuto)}
           >
             <h2 className={classNames(classes.title, classes.textCenter)}>
-              Want to work with us?
+              Want to work with me?
             </h2>
             <h4 className={classNames(classes.description, classes.textCenter)}>
-              Divide details about your product or agency work into parts. Write
-              a few lines about each one and contact us about any further
-              collaboration. We will get back to you in a couple of hours.
+              Shoot me a message and I'll get back to you as soon as possible!
             </h4>
-            <form>
-              <GridContainer>
-                <GridItem md={4} sm={4}>
-                  <CustomInput
-                    labelText="Your name"
-                    formControlProps={{
-                      fullWidth: true,
-                    }}
-                  />
-                </GridItem>
-                <GridItem md={4} sm={4}>
-                  <CustomInput
-                    labelText="Your email"
-                    formControlProps={{
-                      fullWidth: true,
-                    }}
-                  />
-                </GridItem>
-                <GridItem md={4} sm={4}>
-                  <FormControl
-                    fullWidth
-                    className={`${classes.selectFormControl} ${
-                      classes.selectUnderlineRoot
-                    }`}
-                  >
-                    <Select
-                      MenuProps={{
-                        className: classes.selectMenu,
-                      }}
-                      classes={{
-                        select: classes.select,
-                      }}
-                      value={this.state.specialitySelect}
-                      onChange={this.handleSpeciality}
-                      inputProps={{
-                        name: 'specialitySelect',
-                        id: 'speciality-select',
-                      }}
-                    >
-                      <MenuItem
-                        disabled
-                        classes={{
-                          root: classes.selectMenuItem,
-                        }}
-                      >
-                        Speciality
-                      </MenuItem>
-                      <MenuItem
-                        classes={{
-                          root: classes.selectMenuItem,
-                          selected: classes.selectMenuItemSelected,
-                        }}
-                        value="1"
-                      >
-                        I'm a Designer
-                      </MenuItem>
-                      <MenuItem
-                        classes={{
-                          root: classes.selectMenuItem,
-                          selected: classes.selectMenuItemSelected,
-                        }}
-                        value="2"
-                      >
-                        I'm a Developer
-                      </MenuItem>
-                      <MenuItem
-                        classes={{
-                          root: classes.selectMenuItem,
-                          selected: classes.selectMenuItemSelected,
-                        }}
-                        value="3"
-                      >
-                        I'm a Hero
-                      </MenuItem>
-                    </Select>
-                  </FormControl>
-                </GridItem>
-              </GridContainer>
-              <GridContainer>
-                <GridItem
-                  md={4}
-                  sm={4}
-                  className={classNames(
-                    classes.mrAuto,
-                    classes.mlAuto,
-                    classes.textCenter
-                  )}
-                >
-                  <Button color="primary" round>
-                    Let's talk
-                  </Button>
-                </GridItem>
-              </GridContainer>
+            <form
+              action="https://formspree.io/Caitlin@CaitlinMayConsulting.com"
+              method="POST"
+            >
+              <CustomInput
+                labelText="Your Name"
+                inputProps={{
+                  name: 'name',
+                  value: name,
+                  onChange: this.handleChange,
+                }}
+                id="float"
+                formControlProps={{
+                  fullWidth: true,
+                }}
+              />
+              <CustomInput
+                labelText="Email address"
+                inputProps={{
+                  name: 'email',
+                  value: email,
+                  type: 'email',
+                  onChange: this.handleChange,
+                }}
+                id="float"
+                formControlProps={{
+                  fullWidth: true,
+                }}
+              />
+              <CustomInput
+                labelText="Phone"
+                inputProps={{
+                  name: 'phone',
+                  value: phone,
+                  type: 'tel',
+                  onChange: this.handleChange,
+                }}
+                id="float"
+                formControlProps={{
+                  fullWidth: true,
+                }}
+              />
+              <CustomInput
+                labelText="Your message"
+                id="float"
+                formControlProps={{
+                  fullWidth: true,
+                }}
+                inputProps={{
+                  name: 'message',
+                  value: message,
+                  onChange: this.handleChange,
+                  multiline: true,
+                  rows: 4,
+                }}
+              />
+              <div className={classes.textCenter}>
+                <Button color="primary" round type="submit">
+                  Contact me
+                </Button>
+              </div>
             </form>
           </GridItem>
         </GridContainer>

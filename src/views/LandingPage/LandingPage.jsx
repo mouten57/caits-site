@@ -12,6 +12,7 @@ import landingPageStyle from '../../assets/jss/views/landingPageStyle.jsx'
 import SectionProduct from './Sections/SectionProduct.jsx'
 import SectionTeam from './Sections/SectionTeam.jsx'
 import SectionWork from './Sections/SectionWork.jsx'
+import SectionAbout from './Sections/SectionAbout.jsx'
 
 import logo from '../../assets/img/website-icon-white.png'
 

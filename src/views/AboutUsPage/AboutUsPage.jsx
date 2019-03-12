@@ -17,7 +17,7 @@ import Footer from '../../components/Footer/Footer.jsx'
 // sections for this page
 import HeaderLinks from '../../components/Header/HeaderLinks.jsx'
 import SectionDescription from './Sections/SectionDescription.jsx'
-import SectionTeam from './Sections/SectionTeam.jsx'
+import SectionStory from './Sections/SectionStory.jsx'
 import SectionServices from './Sections/SectionServices.jsx'
 import SectionOffice from './Sections/SectionOffice.jsx'
 import SectionContact from './Sections/SectionContact'
@@ -61,7 +61,7 @@ class AboutUsPage extends React.Component {
         <div className={classNames(classes.main, classes.mainRaised)}>
           <div className={classes.container}>
             <SectionDescription />
-            <SectionTeam />
+            <SectionStory />
             <SectionServices />
             <SectionOffice />
             <SectionContact />

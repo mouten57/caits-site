@@ -1,0 +1,10 @@
+.LI-badge-container.profinder.light {
+  max-width: none !important;
+}
+
+.footer-link {
+  color: black;
+}
+.footer-link:hover {
+  color: blue;
+}

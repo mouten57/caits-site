@@ -3,9 +3,9 @@ import React from 'react'
 import withStyles from '@material-ui/core/styles/withStyles'
 
 // @material-ui/icons
-import Chat from '@material-ui/icons/Chat'
-import VerifiedUser from '@material-ui/icons/VerifiedUser'
-import Fingerprint from '@material-ui/icons/Fingerprint'
+import ThumbUp from '@material-ui/icons/ThumbUpRounded'
+import Search from '@material-ui/icons/SearchRounded'
+import FlightTakeoff from '@material-ui/icons/FlightTakeoffRounded'
 
 // core components
 import GridContainer from '../../../components/Grid/GridContainer.jsx'
@@ -20,48 +20,44 @@ class SectionProduct extends React.Component {
     return (
       <div className={classes.section}>
         <GridContainer justify="center">
-          <GridItem xs={12} sm={8} md={8}>
+          <GridItem xs={12}>
             <h2 className={classes.title}>Let's talk product</h2>
-            <h5 className={classes.description}>
+            {/* <h5 className={classes.description}>
               This is the paragraph where you can write more details about your
               product. Keep you user engaged by providing meaningful
               information. Remember that by this time, the user is curious,
               otherwise he wouldn't scroll to get here. Add a button if you want
               the user to see more.
-            </h5>
+            </h5> */}
+          </GridItem>
+          <GridItem xs={12} sm={4} md={4}>
+            <InfoArea
+              title="Build Your Brand"
+              description="Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough."
+              icon={ThumbUp}
+              iconColor="info"
+              vertical
+            />
+          </GridItem>
+          <GridItem xs={12} sm={4} md={4}>
+            <InfoArea
+              title="Find Your Customers"
+              description="Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough."
+              icon={Search}
+              iconColor="success"
+              vertical
+            />
+          </GridItem>
+          <GridItem xs={12} sm={4} md={4}>
+            <InfoArea
+              title="Optimize Your Productivity"
+              description="Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough."
+              icon={FlightTakeoff}
+              iconColor="danger"
+              vertical
+            />
           </GridItem>
         </GridContainer>
-        <div>
-          <GridContainer>
-            <GridItem xs={12} sm={4} md={4}>
-              <InfoArea
-                title="Free Chat"
-                description="Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough."
-                icon={Chat}
-                iconColor="info"
-                vertical
-              />
-            </GridItem>
-            <GridItem xs={12} sm={4} md={4}>
-              <InfoArea
-                title="Verified Users"
-                description="Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough."
-                icon={VerifiedUser}
-                iconColor="success"
-                vertical
-              />
-            </GridItem>
-            <GridItem xs={12} sm={4} md={4}>
-              <InfoArea
-                title="Fingerprint"
-                description="Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough."
-                icon={Fingerprint}
-                iconColor="danger"
-                vertical
-              />
-            </GridItem>
-          </GridContainer>
-        </div>
       </div>
     )
   }

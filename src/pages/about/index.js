@@ -20,7 +20,7 @@ import Footer from '../../components/Footer/Footer.jsx'
 // sections for this page
 import HeaderLinks from '../../components/Header/HeaderLinks.jsx'
 import SectionDescription from '../../views/AboutUsPage/Sections/SectionDescription.jsx'
-import SectionTeam from '../../views/AboutUsPage/Sections/SectionTeam.jsx'
+import SectionStory from '../../views/AboutUsPage/Sections/SectionStory.jsx'
 import SectionServices from '../../views/AboutUsPage/Sections/SectionServices.jsx'
 import SectionOffice from '../../views/AboutUsPage/Sections/SectionOffice.jsx'
 import SectionContact from '../../views/AboutUsPage/Sections/SectionContact'
@@ -54,11 +54,8 @@ class About extends React.Component {
                     classes.textCenter
                   )}
                 >
-                  <h1 className={classes.title}>About Us</h1>
-                  <h4>
-                    Meet the amazing team behind this project and find out more
-                    about how we work.
-                  </h4>
+                  <h1 className={classes.title}>About Me</h1>
+                  <h4>Meet the founder of Caitlin May Consulting.</h4>
                 </GridItem>
               </GridContainer>
             </div>
@@ -66,9 +63,9 @@ class About extends React.Component {
           <div className={classNames(classes.main, classes.mainRaised)}>
             <div className={classes.container}>
               <SectionDescription />
-              <SectionTeam />
-              <SectionServices />
-              <SectionOffice />
+              <SectionStory />
+              {/* <SectionServices />
+              <SectionOffice /> */}
               <SectionContact />
             </div>
           </div>

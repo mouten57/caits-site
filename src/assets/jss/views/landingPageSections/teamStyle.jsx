@@ -3,7 +3,7 @@ import imagesStyle from '../../imagesStyles.jsx'
 
 const teamStyle = {
   section: {
-    padding: '70px 0',
+    padding: '70px 0 40px 0',
     textAlign: 'center',
   },
   title: {

@@ -9,7 +9,7 @@ const workStyle = {
   mrAuto,
   mlAuto,
   section: {
-    padding: '70px 0',
+    padding: '70px 0 40px 0',
   },
   title: {
     ...title,

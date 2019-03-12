@@ -26,10 +26,10 @@ import landingPageStyle from '../assets/jss/views/landingPageStyle.jsx'
 import SectionProduct from '../views/LandingPage/Sections/SectionProduct.jsx'
 import SectionTeam from '../views/LandingPage/Sections/SectionTeam.jsx'
 import SectionWork from '../views/LandingPage/Sections/SectionWork.jsx'
+import SectionAbout from '../views/LandingPage/Sections/SectionAbout.jsx'
 
 import logo from '../assets/img/website-icon-white.png'
 
-import '../assets/scss/material-kit-pro-react.scss?v=1.3.0'
 import Layout from '../components/layout'
 import LandingPage from '../views/LandingPage/LandingPage'
 
@@ -52,7 +52,7 @@ class HomeIndex extends React.Component {
           <Parallax image={require('../assets/img/bg8.jpg')} filter="dark">
             <div className={classes.container}>
               <GridContainer>
-                <GridItem xs={12} sm={5} md={4}>
+                <GridItem xs={12} sm={12} md={4}>
                   <div
                     style={{
                       display: 'flex',
@@ -65,13 +65,17 @@ class HomeIndex extends React.Component {
                   >
                     <h2
                       className={classes.title}
-                      style={{ justifySelf: 'center' }}
+                      style={{
+                        justifySelf: 'center',
+                        textAlign: 'center',
+                        width: '100%',
+                      }}
                     >
-                      Your Story Starts With Us.
+                      The Career Corner.
                     </h2>
                   </div>
                 </GridItem>
-                <GridItem xs={12} sm={7} md={8}>
+                <GridItem xs={12} sm={12} md={8}>
                   <img src={logo} style={{ width: '100%' }} alt="logo" />
                 </GridItem>
               </GridContainer>
@@ -81,11 +85,12 @@ class HomeIndex extends React.Component {
             <div className={classes.container}>
               <SectionTeam />
               <SectionProduct />
+
+              <SectionAbout />
               <SectionWork />
             </div>
           </div>
         </div>
-        ) } }
       </Layout>
     )
   }

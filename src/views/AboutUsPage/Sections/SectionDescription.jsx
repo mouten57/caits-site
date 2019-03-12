@@ -9,23 +9,39 @@ import withStyles from '@material-ui/core/styles/withStyles'
 
 import descriptionStyle from '../../../assets/jss/views/aboutUsSections/descriptionStyle.jsx'
 
+import aboutImage from '../../../assets/img/profilepic.jpeg'
+
 function SectionDescription(props) {
   const { classes } = props
   return (
     <div className={classNames(classes.aboutDescription, classes.textCenter)}>
-      <GridContainer>
+      <GridContainer style={{ alignItems: 'center' }}>
+        <GridItem xs={12} sm={6}>
+          <img
+            src={aboutImage}
+            alt="about image"
+            style={{ maxWidth: '100%', paddingBottom: '20px' }}
+          />
+        </GridItem>
+
         <GridItem
-          md={8}
-          sm={8}
+          xs={12}
+          sm={6}
           className={classNames(classes.mrAuto, classes.mlAuto)}
         >
-          <h5 className={classes.description}>
-            This is the paragraph where you can write more details about your
-            product. Keep you user engaged by providing meaningful information.
-            Remember that by this time, the user is curious, otherwise he
-            wouldn't scroll to get here. Add a button if you want the user to
-            see more.
-          </h5>
+          <p className={classes.description}>
+            My name is Caitlin and ever since I could remember I have been
+            passionate about helping others. It wasn’t until I became a
+            recruiter that I realized where my passion and skills would meet.
+          </p>
+          <p className={classes.description}>
+            If you have worked with recruiters you probably have an opinion
+            about them, whether it be good or bad.
+          </p>
+          <p className={classes.description}>
+            But what a recruiter actually does seems to be the most
+            misunderstood topic for the average job seeker.
+          </p>
         </GridItem>
       </GridContainer>
     </div>

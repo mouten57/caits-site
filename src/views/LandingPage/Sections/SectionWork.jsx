@@ -98,7 +98,7 @@ class SectionWork extends React.Component {
                   md={4}
                   className={`${classes.mrAuto} ${classes.mlAuto}`}
                 >
-                  <Button color="primary" type="submit">
+                  <Button color="rose" type="submit">
                     Send Message
                   </Button>
                 </GridItem>

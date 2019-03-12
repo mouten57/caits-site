@@ -400,6 +400,7 @@ const sectionDescription = {
 
 const description = {
   color: grayColor[0],
+  padding: '0 0 10px 0',
 }
 
 const mlAuto = {
