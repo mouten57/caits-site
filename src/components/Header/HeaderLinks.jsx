@@ -99,7 +99,9 @@ function HeaderLinks({ ...props }) {
           Home
         </Button>
       </ListItem>
-      <ListItem className={classes.listItem}>
+
+      {/* Commented out until pages are done! */}
+      {/* <ListItem className={classes.listItem}>
         <Button
           href="/work-with-me"
           className={classes.navLink}
@@ -118,7 +120,7 @@ function HeaderLinks({ ...props }) {
         >
           Praise
         </Button>
-      </ListItem>
+      </ListItem>*/}
       <ListItem className={classes.listItem}>
         <Button
           href="/about"

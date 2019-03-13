@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'gatsby'
 // @material-ui/core components
 import withStyles from '@material-ui/core/styles/withStyles'
 // @material-ui/icons
@@ -32,7 +33,7 @@ const style = {
   },
 }
 
-class SectionTeam extends React.Component {
+class SectionIntro extends React.Component {
   render() {
     const { classes } = this.props
     return (
@@ -62,9 +63,9 @@ class SectionTeam extends React.Component {
                     Join me to learn how to unlock your inner greatness andbuild
                     a profitable business you love!
                   </p>
-                  <Button color="rose" fullWidth>
-                    <p>Learn More!</p>
-                  </Button>
+                  <Link to="/work-with-me">
+                    <Button color="rose">Learn More!</Button>
+                  </Link>
                 </CardBody>
               </Card>
             </GridItem>
@@ -75,4 +76,4 @@ class SectionTeam extends React.Component {
   }
 }
 
-export default withStyles(style)(SectionTeam)
+export default withStyles(style)(SectionIntro)

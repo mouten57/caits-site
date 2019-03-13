@@ -24,7 +24,7 @@ import landingPageStyle from '../assets/jss/views/landingPageStyle.jsx'
 
 // Sections for this page
 import SectionProduct from '../views/LandingPage/Sections/SectionProduct.jsx'
-import SectionTeam from '../views/LandingPage/Sections/SectionTeam.jsx'
+import SectionIntro from '../views/LandingPage/Sections/SectionIntro.jsx'
 import SectionWork from '../views/LandingPage/Sections/SectionWork.jsx'
 import SectionAbout from '../views/LandingPage/Sections/SectionAbout.jsx'
 
@@ -83,9 +83,8 @@ class HomeIndex extends React.Component {
           </Parallax>
           <div className={classNames(classes.main, classes.mainRaised)}>
             <div className={classes.container}>
-              <SectionTeam />
+              <SectionIntro />
               <SectionProduct />
-
               <SectionAbout />
               <SectionWork />
             </div>

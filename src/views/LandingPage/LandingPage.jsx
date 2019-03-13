@@ -10,7 +10,7 @@ import landingPageStyle from '../../assets/jss/views/landingPageStyle.jsx'
 //import profilePageStyle from '../../assets/jss/views/profilePageStyle.jsx'
 // Sections for this page
 import SectionProduct from './Sections/SectionProduct.jsx'
-import SectionTeam from './Sections/SectionTeam.jsx'
+import SectionIntro from './Sections/SectionIntro.jsx'
 import SectionWork from './Sections/SectionWork.jsx'
 import SectionAbout from './Sections/SectionAbout.jsx'
 
@@ -61,7 +61,7 @@ class LandingPage extends React.Component {
         </Parallax>
         <div className={classNames(classes.main, classes.mainRaised)}>
           <div className={classes.container}>
-            <SectionTeam />
+            <SectionIntro />
             <SectionProduct />
             <SectionWork />
           </div>

@@ -23,13 +23,6 @@ import '../utils/linkedIn.css'
 import '../assets/css/main.css'
 
 class Layout extends React.Component {
-  componentDidMount() {
-    // const script = document.createElement('script')
-    // script.src = 'https://platform.linkedin.com/badges/js/profile.js'
-    // script.async = true
-    // script.defer = true
-    // document.body.appendChild(script)
-  }
   render() {
     let { children, location, classes, ...rest } = this.props
     let content
@@ -88,7 +81,12 @@ class Layout extends React.Component {
                     data-type="profinder"
                     data-theme="light"
                     data-vanity="caitlinouten"
-                    style={{ flexGrow: '2', margin: '0px auto' }}
+                    style={{
+                      width: '60%',
+                      margin: '0 auto',
+                      maxWidth: '550px',
+                      minWidth: '200px',
+                    }}
                     data-rendered="true"
                     data-uid="294378"
                   >

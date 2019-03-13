@@ -56,8 +56,8 @@ function SectionTestimonials({ ...props }) {
             >
               <h2 className={classes.title}>Love From Clients</h2>
               <h5 className={classes.description}>
-                Check what other people are saying about our product. They are
-                very happy with their purchase.
+                Check what other people are saying about my products. They are
+                very happy with their purchases.
               </h5>
             </GridItem>
           </GridContainer>
@@ -69,9 +69,7 @@ function SectionTestimonials({ ...props }) {
                 </div>
                 <CardBody>
                   <h5 className={classes.cardDescription}>
-                    Your products, all the kits that I have downloaded from your
-                    site and worked with are sooo cool! I love the color
-                    mixtures, cards... everything. Keep up the great work!
+                    This is just a placeholder for now :)
                   </h5>
                 </CardBody>
                 <CardFooter testimonial>
@@ -92,10 +90,7 @@ function SectionTestimonials({ ...props }) {
                 </div>
                 <CardBody>
                   <h5 className={classes.cardDescription}>
-                    "Don't be scared of the truth because we need to restart the
-                    human foundation in truth. That's why I love you like Kanye
-                    loves Kanye I love Rick Owens’ bed design but the back is
-                    not so attractive"
+                    This is just a placeholder for now :)
                   </h5>
                 </CardBody>
                 <CardFooter testimonial>
@@ -116,9 +111,7 @@ function SectionTestimonials({ ...props }) {
                 </div>
                 <CardBody>
                   <h5 className={classes.cardDescription}>
-                    "Your products, all the kits that I have downloaded from
-                    your site and worked with are sooo cool! I love the color
-                    mixtures, cards... everything. Keep up the great work!"
+                    This is just a placeholder for now :)
                   </h5>
                 </CardBody>
                 <CardFooter testimonial>
@@ -155,13 +148,8 @@ function SectionTestimonials({ ...props }) {
                     </CardAvatar>
                     <CardBody plain>
                       <h5 className={classes.cardDescription}>
-                        "I speak yell scream directly at the old guard on behalf
-                        of the future. I gotta say at that time I’d like to meet
-                        Kanye I speak yell scream directly at the old guard on
-                        behalf of the future. My brother Chance!!!
+                        This is just a placeholder for now :)
                         <br />
-                        Thank you for letting me work on this masterpiece. One
-                        of my favorite people."
                       </h5>
                       <h4 className={classes.cardTitle}>Kendall Thompson</h4>
                       <Muted>
@@ -196,12 +184,7 @@ function SectionTestimonials({ ...props }) {
                     </CardAvatar>
                     <CardBody plain>
                       <h5 className={classes.cardDescription}>
-                        "Thank you Anna for the invite thank you to the whole
-                        Vogue team Called I Miss the Old Kanye At the God's last
-                        game Chop up the soul Kanye. I promise I will never let
-                        the people down. I want a better life for all!!! Pablo
-                        Pablo Pablo Pablo! Thank you Anna for the invite thank
-                        you to the whole Vogue team."
+                        This is just a placeholder for now :)
                       </h5>
                       <h4 className={classes.cardTitle}>Christian Louboutin</h4>
                       <Muted>
@@ -259,10 +242,7 @@ function SectionTestimonials({ ...props }) {
                     <h6>CEO @ MARKETING DIGITAL LTD.</h6>
                   </Muted>
                   <h5 className={classes.cardDescription}>
-                    "I speak yell scream directly at the old guard on behalf of
-                    the future. I gotta say at that time I’d like to meet Kanye
-                    I speak yell scream directly at the old guard on behalf of
-                    the future."
+                    This is just a placeholder for now :)
                   </h5>
                 </CardBody>
               </Card>
@@ -280,11 +260,7 @@ function SectionTestimonials({ ...props }) {
                     <h6>MARKETING @ APPLE INC.</h6>
                   </Muted>
                   <h5 className={classes.cardDescription}>
-                    "I promise I will never let the people down. I want a better
-                    life for all!!! Pablo Pablo Pablo Pablo! Thank you Anna for
-                    the invite thank you to the whole Vogue team It wasn’t any
-                    Kanyes I love Rick Owens’ bed design but the back is too
-                    high for the beams and angle of the ceiling"
+                    This is just a placeholder for now :)
                   </h5>
                 </CardBody>
               </Card>
@@ -302,10 +278,7 @@ function SectionTestimonials({ ...props }) {
                     <h6>CFO @ APPLE INC.</h6>
                   </Muted>
                   <h5 className={classes.cardDescription}>
-                    "I've been trying to figure out the bed design for the
-                    master bedroom at our Hidden Hills compound... Royère
-                    doesn't make a Polar bear bed but the Polar bear. This is a
-                    very nice testimonial about this company."
+                    This is just a placeholder for now :)
                   </h5>
                 </CardBody>
               </Card>

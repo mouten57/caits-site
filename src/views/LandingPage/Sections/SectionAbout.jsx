@@ -23,7 +23,7 @@ import {
   cardSubtitle,
 } from '../../../assets/jss/material-kit-pro-react'
 
-import aboutImage from '../../../assets/img/AboutSectionImage.jpg'
+import aboutImage from '../../../assets/img/AboutSectionImage.png'
 
 const style = {
   ...productStyle,
@@ -45,7 +45,12 @@ class SectionAbout extends React.Component {
             <img
               src={aboutImage}
               alt="about image"
-              style={{ maxWidth: '105%', float: 'left', margin: 'auto 0' }}
+              style={{
+                width: '100%',
+                borderRadius: '20px',
+                maxHeight: '700px',
+                maxWidth: '430px',
+              }}
             />
           </GridItem>
           <GridItem xs={12} sm={6}>
