@@ -5,19 +5,19 @@ import classNames from 'classnames'
 import GridContainer from '../../../components/Grid/GridContainer.jsx'
 import GridItem from '../../../components/Grid/GridItem.jsx'
 import Card from '../../../components/Card/Card.jsx'
-import CardAvatar from '../../../components/Card/CardAvatar.jsx'
+// import CardAvatar from '../../../components/Card/CardAvatar.jsx'
 import CardBody from '../../../components/Card/CardBody.jsx'
-import CardFooter from '../../../components/Card/CardFooter.jsx'
-import Button from '../../../components/CustomButtons/Button.jsx'
+// import CardFooter from '../../../components/Card/CardFooter.jsx'
+// import Button from '../../../components/CustomButtons/Button.jsx'
 // @material-ui/core components
 import withStyles from '@material-ui/core/styles/withStyles'
 
 import teamStyle from '../../../assets/jss/views/aboutUsSections/teamStyle.jsx'
 
-import FaceMarc from '../../../assets/img/faces/marc.jpg'
-import FaceChristian from '../../../assets/img/faces/christian.jpg'
-import FaceKendall from '../../../assets/img/faces/kendall.jpg'
-import FaceAvatar from '../../../assets/img/faces/avatar.jpg'
+// import FaceMarc from '../../../assets/img/faces/marc.jpg'
+// import FaceChristian from '../../../assets/img/faces/christian.jpg'
+// import FaceKendall from '../../../assets/img/faces/kendall.jpg'
+// import FaceAvatar from '../../../assets/img/faces/avatar.jpg'
 
 function SectionTeam(props) {
   const { classes } = props

@@ -43,6 +43,9 @@ import CustomDropdown from '../CustomDropdown/CustomDropdown.jsx'
 import Button from '../CustomButtons/Button.jsx'
 import headerLinksStyle from '../../assets/jss/components/headerLinksStyle.jsx'
 
+import LinkedIn from '../LinkedIn'
+import '../../assets/css/main.css'
+
 function HeaderLinks({ ...props }) {
   const easeInOutQuad = (t, b, c, d) => {
     t /= d / 2
@@ -100,8 +103,7 @@ function HeaderLinks({ ...props }) {
         </Button>
       </ListItem>
 
-      {/* Commented out until pages are done! */}
-      {/* <ListItem className={classes.listItem}>
+      <ListItem className={classes.listItem}>
         <Button
           href="/work-with-me"
           className={classes.navLink}
@@ -111,6 +113,8 @@ function HeaderLinks({ ...props }) {
           Work With Me
         </Button>
       </ListItem>
+      {/* Commented out until pages are done! */}
+      {/* 
       <ListItem className={classes.listItem}>
         <Button
           href="/praise"
@@ -140,6 +144,10 @@ function HeaderLinks({ ...props }) {
         >
           Contact
         </Button>
+      </ListItem>
+      {/* LINKEDIN PROFINDER--MOVED FROM FOOTER */}
+      <ListItem className={classes.listItem}>
+        <LinkedIn />
       </ListItem>
     </List>
   )

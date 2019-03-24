@@ -3,15 +3,10 @@ import { Link } from 'gatsby'
 // @material-ui/core components
 import withStyles from '@material-ui/core/styles/withStyles'
 
-// @material-ui/icons
-import ThumbUp from '@material-ui/icons/ThumbUpRounded'
-import Search from '@material-ui/icons/SearchRounded'
-import FlightTakeoff from '@material-ui/icons/FlightTakeoffRounded'
-
 // core components
 import GridContainer from '../../../components/Grid/GridContainer.jsx'
 import GridItem from '../../../components/Grid/GridItem.jsx'
-import InfoArea from '../../../components/InfoArea/InfoArea.jsx'
+// import InfoArea from '../../../components/InfoArea/InfoArea.jsx'
 import Card from '../../../components/Card/Card'
 import CardBody from '../../../components/Card/CardBody'
 import Button from '../../../components/CustomButtons/Button'
@@ -44,7 +39,7 @@ class SectionAbout extends React.Component {
           <GridItem xs={12} sm={6}>
             <img
               src={aboutImage}
-              alt="about image"
+              alt="about"
               style={{
                 width: '100%',
                 borderRadius: '20px',

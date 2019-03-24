@@ -75,6 +75,7 @@ class Header extends React.Component {
         <img
           src={logo}
           style={{ height: '60px', margin: '0 0 0 5px', paddingLeft: '5px' }}
+          alt="logo"
         />
         <Toolbar className={classes.container} style={{ marginLeft: '0' }}>
           <Button className={classes.title} style={{ paddingLeft: '8px' }}>

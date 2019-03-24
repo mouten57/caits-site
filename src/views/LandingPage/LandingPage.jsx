@@ -9,7 +9,8 @@ import Parallax from '../../components/Parallax/Parallax.jsx'
 import landingPageStyle from '../../assets/jss/views/landingPageStyle.jsx'
 //import profilePageStyle from '../../assets/jss/views/profilePageStyle.jsx'
 // Sections for this page
-import SectionProduct from './Sections/SectionProduct.jsx'
+// import SectionProduct from './Sections/SectionProduct.jsx'
+import Testimonials from '../../components/Sections/Testimonials'
 import SectionIntro from './Sections/SectionIntro.jsx'
 import SectionWork from './Sections/SectionWork.jsx'
 import SectionAbout from './Sections/SectionAbout.jsx'
@@ -22,19 +23,14 @@ class LandingPage extends React.Component {
     document.body.scrollTop = 0
   }
   render() {
-    const { classes, ...rest } = this.props
-    // const imageClasses = classNames(
-    //   classes.imgRaised,
-    //   classes.imgRoundedCircle,
-    //   classes.imgFluid
-    // )
-    // const navImageClasses = classNames(classes.imgRounded, classes.imgGallery)
+    const { classes } = this.props
+
     return (
       <div>
         <Parallax image={require('../../assets/img/bg8.jpg')} filter="dark">
           <div className={classes.container}>
             <GridContainer>
-              <GridItem xs={12} sm={5} md={4}>
+              <GridItem xs={12} sm={12} md={4}>
                 <div
                   style={{
                     display: 'flex',
@@ -47,13 +43,17 @@ class LandingPage extends React.Component {
                 >
                   <h2
                     className={classes.title}
-                    style={{ justifySelf: 'center' }}
+                    style={{
+                      justifySelf: 'center',
+                      textAlign: 'center',
+                      width: '100%',
+                    }}
                   >
-                    Your Story Starts With Us.
+                    The Career Corner.
                   </h2>
                 </div>
               </GridItem>
-              <GridItem xs={12} sm={7} md={8}>
+              <GridItem xs={12} sm={12} md={8}>
                 <img src={logo} style={{ width: '100%' }} alt="logo" />
               </GridItem>
             </GridContainer>
@@ -62,7 +62,8 @@ class LandingPage extends React.Component {
         <div className={classNames(classes.main, classes.mainRaised)}>
           <div className={classes.container}>
             <SectionIntro />
-            <SectionProduct />
+            <Testimonials />
+            <SectionAbout />
             <SectionWork />
           </div>
         </div>

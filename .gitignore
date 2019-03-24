@@ -10,3 +10,5 @@ yarn.lock
 .DS_Store
 
 /files
+# hide faces of peeps from linkedIn
+/src/assets/img/faces

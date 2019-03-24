@@ -19,7 +19,7 @@ function SectionDescription(props) {
         <GridItem xs={12} sm={6}>
           <img
             src={aboutImage}
-            alt="about image"
+            alt="about"
             style={{ maxWidth: '100%', paddingBottom: '20px' }}
           />
         </GridItem>

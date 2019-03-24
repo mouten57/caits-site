@@ -62,7 +62,7 @@ const testimonialsSection = {
     },
   },
   testimonials: {
-    padding: '80px 0',
+    padding: '20px 0',
     '& $cardDescription': {
       fontStyle: 'italic',
     },
@@ -98,7 +98,7 @@ const testimonialsSection = {
   },
   card2: {
     maxWidth: '650px',
-    margin: '60px auto',
+    margin: '20px auto',
     '& $cardDescription': {
       fontStyle: 'italic',
     },

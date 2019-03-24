@@ -3,19 +3,19 @@ import React from 'react'
 import classNames from 'classnames'
 // @material-ui/core components
 import withStyles from '@material-ui/core/styles/withStyles'
-import List from '@material-ui/core/List'
-import ListItem from '@material-ui/core/ListItem'
+// import List from '@material-ui/core/List'
+// import ListItem from '@material-ui/core/ListItem'
 // @material-ui/icons
-import Favorite from '@material-ui/icons/Favorite'
+// import Favorite from '@material-ui/icons/Favorite'
 // core components
 
-import Header from '../../components/Header/Header.jsx'
+// import Header from '../../components/Header/Header.jsx'
 import GridContainer from '../../components/Grid/GridContainer.jsx'
 import GridItem from '../../components/Grid/GridItem.jsx'
 import Parallax from '../../components/Parallax/Parallax.jsx'
-import Footer from '../../components/Footer/Footer.jsx'
+// import Footer from '../../components/Footer/Footer.jsx'
 // sections for this page
-import HeaderLinks from '../../components/Header/HeaderLinks.jsx'
+// import HeaderLinks from '../../components/Header/HeaderLinks.jsx'
 import SectionDescription from './Sections/SectionDescription.jsx'
 import SectionStory from './Sections/SectionStory.jsx'
 import SectionServices from './Sections/SectionServices.jsx'

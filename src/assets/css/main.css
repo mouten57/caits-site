@@ -8,3 +8,9 @@
 .footer-link:hover {
   color: blue;
 }
+
+@media (min-width: 960px) {
+  .LI-profile-badge {
+    display: none;
+  }
+}
