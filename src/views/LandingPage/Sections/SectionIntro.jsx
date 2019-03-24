@@ -56,12 +56,12 @@ class SectionIntro extends React.Component {
               <Card profile>
                 <CardBody>
                   <h4 className={classes.cardTitle}>
-                    Ready to escape your corporate job?
+                    Ready to take your job search to the next level and find
+                    your dream job?
                   </h4>
 
                   <p className={classes.description}>
-                    Join me to learn how to unlock your inner greatness andbuild
-                    a profitable business you love!
+                    Sign up today for a free 15 minute phone consultation!
                   </p>
                   <Link to="/work-with-me">
                     <Button color="rose">Learn More!</Button>
