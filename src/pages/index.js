@@ -1,12 +1,7 @@
 import React from 'react'
-// import { Link } from 'gatsby'
-
-// @material-ui/core components
 import withStyles from '@material-ui/core/styles/withStyles'
 import withRoot from '../withRoot'
-
 import landingPageStyle from '../assets/jss/views/landingPageStyle.jsx'
-
 import Layout from '../components/layout'
 import LandingPage from '../views/LandingPage/LandingPage'
 

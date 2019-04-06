@@ -10,22 +10,22 @@ import {
 } from 'react-google-maps'
 // @material-ui/core components
 import withStyles from '@material-ui/core/styles/withStyles'
-import List from '@material-ui/core/List'
-import ListItem from '@material-ui/core/ListItem'
+// import List from '@material-ui/core/List'
+// import ListItem from '@material-ui/core/ListItem'
 // @material-ui/icons
-import Favorite from '@material-ui/icons/Favorite'
+// import Favorite from '@material-ui/icons/Favorite'
 import PinDrop from '@material-ui/icons/PinDrop'
 import Phone from '@material-ui/icons/Phone'
-import BusinessCenter from '@material-ui/icons/BusinessCenter'
+// import BusinessCenter from '@material-ui/icons/BusinessCenter'
 // core components
-import Header from '../../components/Header/Header.jsx'
-import HeaderLinks from '../../components/Header/HeaderLinks.jsx'
+// import Header from '../../components/Header/Header.jsx'
+// import HeaderLinks from '../../components/Header/HeaderLinks.jsx'
 import GridContainer from '../../components/Grid/GridContainer.jsx'
 import GridItem from '../../components/Grid/GridItem.jsx'
 import InfoArea from '../../components/InfoArea/InfoArea.jsx'
 import CustomInput from '../../components/CustomInput/CustomInput.jsx'
 import Button from '../../components/CustomButtons/Button.jsx'
-import Footer from '../../components/Footer/Footer.jsx'
+// import Footer from '../../components/Footer/Footer.jsx'
 
 import contactUsStyle from '../../assets/jss/views/contactUsStyle.jsx'
 
@@ -103,7 +103,6 @@ const CustomSkinMap = withScriptjs(
     </GoogleMap>
   ))
 )
-
 class ContactUsPage extends React.Component {
   constructor(props) {
     super(props)

@@ -18,8 +18,8 @@ import Parallax from '../../components/Parallax/Parallax.jsx'
 // import HeaderLinks from '../../components/Header/HeaderLinks.jsx'
 import SectionDescription from './Sections/SectionDescription.jsx'
 import SectionStory from './Sections/SectionStory.jsx'
-import SectionServices from './Sections/SectionServices.jsx'
-import SectionOffice from './Sections/SectionOffice.jsx'
+// import SectionServices from './Sections/SectionServices.jsx'
+// import SectionOffice from './Sections/SectionOffice.jsx'
 import SectionContact from './Sections/SectionContact'
 
 import aboutUsStyle from '../../assets/jss/views/aboutUsStyle.jsx'
@@ -29,6 +29,7 @@ class AboutUsPage extends React.Component {
     typeof window !== 'undefined' && window.scrollTo(0, 0)
     document.body.scrollTop = 0
   }
+
   render() {
     const { classes } = this.props
     return (
@@ -49,11 +50,8 @@ class AboutUsPage extends React.Component {
                   classes.textCenter
                 )}
               >
-                <h1 className={classes.title}>About Us</h1>
-                <h4>
-                  Meet the amazing team behind this project and find out more
-                  about how we work.
-                </h4>
+                <h1 className={classes.title}>About Me</h1>
+                <h4>Meet the founder of Caitlin May Consulting.</h4>
               </GridItem>
             </GridContainer>
           </div>
@@ -62,8 +60,8 @@ class AboutUsPage extends React.Component {
           <div className={classes.container}>
             <SectionDescription />
             <SectionStory />
-            <SectionServices />
-            <SectionOffice />
+            {/* <SectionServices />
+              <SectionOffice /> */}
             <SectionContact />
           </div>
         </div>
