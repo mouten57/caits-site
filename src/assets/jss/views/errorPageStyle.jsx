@@ -8,21 +8,22 @@ import {
 const errorPageStyles = {
   contentCenter: {
     position: 'absolute',
-    top: '50%',
+    top: '35%',
     left: '50%',
     zIndex: '3',
     transform: 'translate(-50%,-50%)',
     textAlign: 'center',
     color: whiteColor,
     padding: '0 15px',
-    width: '100%',
+    width: '90%',
     maxWidth: '880px',
   },
   title: {
     ...title,
-    fontSize: '13.7em',
+    fontSize: '13vw',
     color: whiteColor,
-    letterSpacing: '14px',
+    letterSpacing: '10px',
+    maxWidth: '100%',
     fontWeight: '700',
   },
   subTitle: {
@@ -30,10 +31,21 @@ const errorPageStyles = {
     marginTop: '0',
     marginBottom: '8px',
   },
+  link: {
+    color: whiteColor,
+    textDecoration: 'underline',
+    fontWeight: '500',
+    '&,& *,& *:hover,& *:focus': {
+      color: 'inherit !important',
+    },
+  },
   description: {
-    fontSize: '1.125rem',
-    marginTop: '0',
-    marginBottom: '8px',
+    fontSize: '19.5px',
+    letterSpacing: '1px',
+    position: 'fixed',
+    bottom: '20%',
+    width: 'auto',
+    left: '0',
   },
   pageHeader: {
     minHeight: '100vh',
