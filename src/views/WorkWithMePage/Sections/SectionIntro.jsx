@@ -64,20 +64,11 @@ class SectionIntro extends Component {
                 </div>
               </div>
             </GridItem>
-            <GridContainer style={{ display: 'flex', alignItems: 'center' }}>
+            <GridContainer
+              style={{ display: 'flex', justifyContent: 'center' }}
+            >
               <GridItem xs={6}>
                 <img src={logo} alt="logo" style={{ width: 'inherit' }} />
-              </GridItem>
-              <GridItem xs={6}>
-                <h5 className={classes.description}>
-                  When reviewing the following packages, note that my typical
-                  client loses at least $1,000+ every week they are unemployed
-                  (this does not include health insurance & other benefits).
-                  When you take into account the $5,000 - $10,000 salary
-                  increases clients often receive with their new job offer, your
-                  package is a small investment that will pay for itself many
-                  times over.
-                </h5>
               </GridItem>
             </GridContainer>
           </GridContainer>
