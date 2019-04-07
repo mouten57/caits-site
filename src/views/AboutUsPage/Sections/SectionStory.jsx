@@ -5,21 +5,12 @@ import classNames from 'classnames'
 import GridContainer from '../../../components/Grid/GridContainer.jsx'
 import GridItem from '../../../components/Grid/GridItem.jsx'
 import Card from '../../../components/Card/Card.jsx'
-// import CardAvatar from '../../../components/Card/CardAvatar.jsx'
 import CardBody from '../../../components/Card/CardBody.jsx'
-// import CardFooter from '../../../components/Card/CardFooter.jsx'
-// import Button from '../../../components/CustomButtons/Button.jsx'
-// @material-ui/core components
 import withStyles from '@material-ui/core/styles/withStyles'
 
-import teamStyle from '../../../assets/jss/views/aboutUsSections/teamStyle.jsx'
+import storyStyle from '../../../assets/jss/views/aboutUsSections/storyStyle.jsx'
 
-// import FaceMarc from '../../../assets/img/faces/marc.jpg'
-// import FaceChristian from '../../../assets/img/faces/christian.jpg'
-// import FaceKendall from '../../../assets/img/faces/kendall.jpg'
-// import FaceAvatar from '../../../assets/img/faces/avatar.jpg'
-
-function SectionTeam(props) {
+function SectionStory(props) {
   const { classes } = props
   return (
     <div className={classes.team}>
@@ -127,4 +118,4 @@ function SectionTeam(props) {
   )
 }
 
-export default withStyles(teamStyle)(SectionTeam)
+export default withStyles(storyStyle)(SectionStory)

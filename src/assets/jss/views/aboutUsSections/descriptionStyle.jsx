@@ -15,7 +15,12 @@ const descriptionStyle = {
   },
   mrAuto,
   mlAuto,
-  description,
+  description: {
+    ...description,
+    fontSize: '20px',
+    padding: '10px',
+    lineHeight: '1.1',
+  },
 }
 
 export default descriptionStyle

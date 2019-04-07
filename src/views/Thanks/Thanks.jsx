@@ -1,24 +1,10 @@
 import React from 'react'
 // @material-ui/core components
 import withStyles from '@material-ui/core/styles/withStyles'
-import List from '@material-ui/core/List'
-import ListItem from '@material-ui/core/ListItem'
-// @material-ui/icons
-import Favorite from '@material-ui/icons/Favorite'
-// core components
-import Header from '../../components/Header/Header.jsx'
-import HeaderLinks from '../../components/Header/HeaderLinks.jsx'
-import Footer from '../../components/Footer/Footer.jsx'
 import GridContainer from '../../components/Grid/GridContainer.jsx'
 import GridItem from '../../components/Grid/GridItem.jsx'
-
 import errorPageStyle from '../../assets/jss/views/errorPageStyle'
-
 import image from '../../assets/img/clint-mckoy.jpg'
-
-const style = {
-  ...errorPageStyle,
-}
 
 class Components extends React.Component {
   constructor(props) {
@@ -48,7 +34,7 @@ class Components extends React.Component {
     document.body.scrollTop = 0
   }
   render() {
-    const { classes, ...rest } = this.props
+    const { classes } = this.props
     return (
       <div>
         <div

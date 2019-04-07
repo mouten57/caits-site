@@ -47,6 +47,10 @@ const headerStyle = theme => ({
   },
   container: {
     ...container,
+    '@media (max-width: 365px)': {
+      maxWidth: '600px',
+      justifyContent: 'flex-end',
+    },
     '@media (min-width: 576px)': {
       maxWidth: '700px',
     },
@@ -62,10 +66,14 @@ const headerStyle = theme => ({
     minHeight: '50px',
     alignItems: 'center',
     justifyContent: 'space-between',
+
     display: 'flex',
     flexWrap: 'nowrap',
   },
   title: {
+    '@media (max-width: 365px)': {
+      display: 'none',
+    },
     '&,& a': {
       ...defaultFont,
       minWidth: 'unset',
