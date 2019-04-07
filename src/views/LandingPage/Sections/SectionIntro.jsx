@@ -28,6 +28,13 @@ import profilepic from '../../../assets/img/profilepic.jpeg'
 const style = {
   ...teamsStyle,
   ...teamStyle,
+  link: {
+    color: 'inherit',
+    fontWeight: '500',
+    '&:hover': {
+      color: 'blue',
+    },
+  },
   justifyContentCenter: {
     justifyContent: 'center',
   },
@@ -61,7 +68,10 @@ class SectionIntro extends React.Component {
                   </h4>
 
                   <p className={classes.description}>
-                    Sign up today for a free 15 minute phone consultation!
+                    <a href="#contact" className={classes.link}>
+                      Sign up today
+                    </a>{' '}
+                    for a free 15 minute phone consultation!
                   </p>
                   <Link to="/work-with-me">
                     <Button color="rose">Learn More!</Button>

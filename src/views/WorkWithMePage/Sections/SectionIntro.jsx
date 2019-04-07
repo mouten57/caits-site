@@ -16,7 +16,7 @@ class SectionIntro extends Component {
   render() {
     const { classes } = this.props
     return (
-      <div className={classes.pricing} style={{ paddingTop: '80px' }}>
+      <div className={` ${classes.pricing}`} style={{ marginTop: '150px' }}>
         <div className={classes.container}>
           <GridContainer>
             <GridItem
@@ -48,7 +48,13 @@ class SectionIntro extends Component {
                     I can assure you I offer more than your average resume
                     writer because I AM a current recruiter who knows how to:{' '}
                   </h5>
-                  <ol style={{ width: '80%', margin: '30px auto 40px auto' }}>
+                  <ol
+                    style={{
+                      width: '80%',
+                      margin: '30px auto 40px auto',
+                      color: '#999999',
+                    }}
+                  >
                     <li>Make a resume stand out from a crowd</li>
                     <li>Effectively network to get your foot in the door</li>
                     <li>Interview like a champ </li>

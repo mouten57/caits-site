@@ -33,7 +33,7 @@ class SectionWork extends React.Component {
     const { name, email, message } = this.state
     const { classes } = this.props
     return (
-      <div className={classes.section}>
+      <div className={classes.section} id="contact">
         <GridContainer justify="center">
           <GridItem cs={12} sm={8} md={8}>
             <h2 className={classes.title}>Work with me!</h2>

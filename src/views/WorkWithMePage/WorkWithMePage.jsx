@@ -1,4 +1,5 @@
 import React from 'react'
+import classNames from 'classnames'
 import withStyles from '@material-ui/core/styles/withStyles'
 import GridContainer from '../../components/Grid/GridContainer.jsx'
 import GridItem from '../../components/Grid/GridItem.jsx'
@@ -6,6 +7,7 @@ import SectionIntro from './Sections/SectionIntro'
 import SectionProjects from './Sections/SectionProjects'
 import SectionPricing from './Sections/SectionPricing'
 import projectsStyle from '../../assets/jss/views/sectionsSections/projectsStyle'
+import landingPageStyle from '../../assets/jss/views/landingPageStyle.jsx'
 
 const style = {
   ...projectsStyle,
@@ -18,7 +20,7 @@ const WorkWithMe = props => {
   const { classes } = props
 
   return (
-    <div className={`${classes.team} ${classes.section}`}>
+    <div className={classNames(classes.main, classes.mainRaised)}>
       <div className={classes.container}>
         <GridContainer>
           <SectionIntro />
@@ -31,4 +33,4 @@ const WorkWithMe = props => {
   )
 }
 
-export default withStyles(style)(WorkWithMe)
+export default withStyles(landingPageStyle)(WorkWithMe)

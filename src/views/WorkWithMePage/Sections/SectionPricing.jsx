@@ -327,11 +327,15 @@ class SectionPricing extends Component {
               <GridItem xs={12}>
                 <h5
                   className={classes.description}
-                  style={{ width: '80%', margin: '0 auto' }}
+                  style={{
+                    width: '90%',
+                    margin: '10px auto',
+                    textAlign: 'center',
+                  }}
                 >
                   I also offer: Comprehensive Job Search Coaching and Interview
-                  Coaching services (2 sessions minimum). To learn more, please
-                  email{' '}
+                  Coaching services (2 sessions minimum). <br />To learn more,
+                  please email{' '}
                   <a
                     href={`mailto:caitlin@caitlinmayconsulting.com?subject=I'm interested in your career consulting!&body=Hi, I'd like to learn more about your career consulting services.%0D%0A%0D%0AMy Name:%0D%0APhone Number:%0D%0AI'm interested in and excited about:%0D%0AMessage:%0D%0A%0D%0AThanks!%0D%0A(name)`}
                   >

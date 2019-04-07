@@ -9,13 +9,20 @@ import {
   whiteColor,
   sectionDark,
   hexToRgb,
+  main,
+  mainRaised,
 } from '../../material-kit-pro-react.jsx'
 
 const projectsSection = {
-  container,
+  container: {
+    ...container,
+    zIndex: '2',
+  },
   mlAuto,
   mrAuto,
   title,
+  ...main,
+  ...mainRaised,
   subTitle: {
     ...title,
     fontSize: '16px',
