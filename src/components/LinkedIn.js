@@ -68,7 +68,7 @@ const LinkedIn = () => (
                 </div>
                 <div className="LI-col LI-header">
                   <div className="LI-name">Caitlin Outen</div>
-                  <div className="LI-title">12 recommendations</div>
+                  <div className="LI-title">18 recommendations</div>
                 </div>
               </a>
             </div>
