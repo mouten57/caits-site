@@ -61,8 +61,8 @@ function SectionTestimonials({ ...props }) {
             >
               <h2 className={classes.cardTitle}>What Clients Say</h2>
               <h5 className={classes.cardDescription}>
-                Need more information? Check what other people are saying about
-                Caitlin May Consulting.
+                Need more information? Check out what other people are saying
+                about Caitlin May Consulting.
               </h5>
               <hr style={{ border: '1px solid #FFF' }} />
             </GridItem>
