@@ -35,7 +35,8 @@ const tableStyle = {
     textAlign: 'right',
   },
   table: {
-    marginBottom: '0',
+    marginTop: '30px',
+    marginBottom: '20px',
     width: '100%',
     maxWidth: '100%',
     backgroundColor: 'transparent',
@@ -52,8 +53,8 @@ const tableStyle = {
   },
   tableCell: {
     ...defaultFont,
-    lineHeight: '1.5em',
-    padding: '12px 8px!important',
+    lineHeight: '1.1em',
+    padding: '6px 8px!important',
     verticalAlign: 'middle',
     fontSize: '0.875rem',
     borderBottom: 'none',
@@ -63,8 +64,8 @@ const tableStyle = {
   },
   tableHeadCell: {
     fontSize: '1.063rem',
-    borderBottomWidth: '1px',
-    fontWeight: '300',
+    borderBottomWidth: '10px',
+    fontWeight: '400',
     color: grayColor[15],
     borderTopWidth: '0 !important',
   },

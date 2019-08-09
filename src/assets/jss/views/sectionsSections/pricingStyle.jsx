@@ -105,6 +105,14 @@ const pricingSection = {
   textCenter: {
     textAlign: 'center',
   },
+  textRight: {
+    textAlign: 'right',
+  },
+  textLeft: {
+    textAlign: 'left',
+    padding: '0',
+    margin: '0',
+  },
   sectionSpace: {
     height: '70px',
     display: 'block',

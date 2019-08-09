@@ -18,7 +18,7 @@ class SectionIntro extends Component {
     return (
       <div className={` ${classes.pricing}`} style={{ marginTop: '150px' }}>
         <div className={classes.container}>
-          <GridContainer>
+          <GridContainer {...this.props}>
             <GridItem
               xs={12}
               className={`${classes.mlAuto} ${classes.mrAuto} ${
@@ -64,13 +64,21 @@ class SectionIntro extends Component {
                 </div>
               </div>
             </GridItem>
+            <GridItem
+              xs={12}
+              className={`${classes.mlAuto} ${classes.mrAuto} ${
+                classes.textCenter
+              }`}
+            >
+              <img
+                src={logo}
+                alt="logo"
+                style={{ width: '50%', maxWidth: '100%', margin: '0 auto' }}
+              />
+            </GridItem>
             <GridContainer
               style={{ display: 'flex', justifyContent: 'center' }}
-            >
-              <GridItem xs={6}>
-                <img src={logo} alt="logo" style={{ width: 'inherit' }} />
-              </GridItem>
-            </GridContainer>
+            />
           </GridContainer>
         </div>
       </div>

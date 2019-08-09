@@ -26,6 +26,7 @@ const pricingStyle = {
   textCenter: {
     textAlign: 'center',
   },
+
   block: {
     color: 'inherit',
     padding: '0.9375rem',
