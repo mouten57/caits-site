@@ -16,6 +16,7 @@ import withStyles from '@material-ui/core/styles/withStyles'
 // import Favorite from '@material-ui/icons/Favorite'
 import PinDrop from '@material-ui/icons/PinDrop'
 import Phone from '@material-ui/icons/Phone'
+import SubdirectoryArrowRight from '@material-ui/icons/SubdirectoryArrowRight'
 // import BusinessCenter from '@material-ui/icons/BusinessCenter'
 // core components
 // import Header from '../../components/Header/Header.jsx'
@@ -248,18 +249,22 @@ class ContactUsPage extends React.Component {
                     icon={Phone}
                     iconColor="primary"
                   />
-                  {/* <InfoArea
+                  <InfoArea
                     className={classes.info}
-                    title="Legal Information"
+                    title="Schedule a FREE Consultation"
                     description={
-                      <p>
-                        Creative Tim Ltd. <br /> VAT · EN2341241 <br /> IBAN ·
-                        EN8732ENGB2300099123 <br /> Bank · Great Britain Bank
-                      </p>
+                      <a
+                        href="https://caitlinmayconsulting.as.me/FREECONSULT"
+                        target="_blank"
+                      >
+                        <Button color="primary" round style={{ width: '100%' }}>
+                          Get started now!
+                        </Button>
+                      </a>
                     }
-                    icon={BusinessCenter}
+                    icon={SubdirectoryArrowRight}
                     iconColor="primary"
-                  /> */}
+                  />
                 </GridItem>
               </GridContainer>
             </div>

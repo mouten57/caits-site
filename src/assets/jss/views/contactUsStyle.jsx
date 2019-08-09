@@ -34,6 +34,12 @@ const contactUsStyle = {
   textCenter: {
     textAlign: 'center !important',
   },
+  schedLink: {
+    color: 'Pink !important',
+    '&:hover': {
+      color: 'blue',
+    },
+  },
   block: {
     color: 'inherit',
     padding: '0.9375rem',
