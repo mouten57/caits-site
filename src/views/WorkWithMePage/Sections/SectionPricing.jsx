@@ -25,10 +25,6 @@ import Danger from '../../../components/Typography/Danger.jsx'
 
 import pricingStyle from '../../../assets/jss/views/sectionsSections/pricingStyle.jsx'
 
-import bg11 from '../../../assets/img/bg8.jpg'
-import city from '../../../assets/img/bg8.jpg'
-import cardBlog3 from '../../../assets/img/bg8.jpg'
-
 class SectionPricing extends Component {
   anchorElBottom1 = null
   anchorElBottom2 = null

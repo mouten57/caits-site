@@ -35,7 +35,7 @@ class AboutUsPage extends React.Component {
     return (
       <div>
         <Parallax
-          image={require('../../assets/img/bg9.jpg')}
+          image={require('../../assets/img/CMC_BG_2.jpg')}
           filter="dark"
           small
         >
