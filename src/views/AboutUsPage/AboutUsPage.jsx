@@ -36,12 +36,12 @@ class AboutUsPage extends React.Component {
       <div>
         <Parallax
           image={require('../../assets/img/CMC_BG_2.jpg')}
-          filter="dark"
+          filter="white"
           small
         >
           <div className={classes.container}>
             <GridContainer justify="center">
-              <GridItem
+              {/* <GridItem
                 md={8}
                 sm={8}
                 className={classNames(
@@ -52,7 +52,7 @@ class AboutUsPage extends React.Component {
               >
                 <h1 className={classes.title}>About Me</h1>
                 <h4>Meet the founder of Caitlin May Consulting.</h4>
-              </GridItem>
+              </GridItem> */}
             </GridContainer>
           </div>
         </Parallax>
