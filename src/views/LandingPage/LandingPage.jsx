@@ -7,6 +7,7 @@ import GridContainer from '../../components/Grid/GridContainer.jsx'
 import GridItem from '../../components/Grid/GridItem.jsx'
 import Parallax from '../../components/Parallax/Parallax.jsx'
 import landingPageStyle from '../../assets/jss/views/landingPageStyle.jsx'
+import SignUpModal from '../../components/SignUpModal/SignUpModal'
 //import profilePageStyle from '../../assets/jss/views/profilePageStyle.jsx'
 // Sections for this page
 // import SectionProduct from './Sections/SectionProduct.jsx'
@@ -65,6 +66,8 @@ class LandingPage extends React.Component {
         <div className={classNames(classes.main, classes.mainRaised)}>
           <div className={classes.container}>
             <SectionIntro />
+
+            <SignUpModal />
             <Testimonials />
             <SectionAbout />
             <SectionWork />
