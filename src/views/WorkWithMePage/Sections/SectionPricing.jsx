@@ -24,6 +24,7 @@ import Table from '../../../components/Table/Table.jsx'
 import Danger from '../../../components/Typography/Danger.jsx'
 
 import pricingStyle from '../../../assets/jss/views/sectionsSections/pricingStyle.jsx'
+import { add_on_pricing, coaching_process } from './add_on_pricing'
 
 class SectionPricing extends Component {
   anchorElBottom1 = null
@@ -52,7 +53,6 @@ class SectionPricing extends Component {
 
   render() {
     const { classes, ...rest } = this.props
-    console.log(this.props)
 
     const simpleCheck = [{ color: 'success', icon: Check }].map((prop, key) => {
       return (
@@ -144,9 +144,14 @@ class SectionPricing extends Component {
                       simpleCheck,
                       simpleCheck,
                     ],
-                    ['Entry-Level', '$600', '$800', ' $1000'],
-                    ['Professional', '$800', '$1000', ' $1200'],
-                    ['Executive', '$1000', '$1200', ' $1400'],
+                    [
+                      'College grad- 3 years exp: Entry-Level',
+                      '$600',
+                      '$800',
+                      ' $1000',
+                    ],
+                    ['4-10 years exp: Professional', '$800', '$1000', ' $1200'],
+                    ['11 years + exp: Executive', '$1000', '$1200', ' $1400'],
                   ]}
                   customCellClasses={[
                     classes.textLeft,
@@ -167,94 +172,29 @@ class SectionPricing extends Component {
                   <strong>Additional add-on options</strong>:
                 </h5>
                 <ul>
-                  <li>
-                    <strong>
-                      Standard Applicant Tracking System (ATS) optimized resume
-                      in word and pdf format + 2 rounds of revisions
-                    </strong>{' '}
-                    - $400 - $800
-                    <br />
-                    **Prices vary based off experience level**
-                  </li>
-                  <li>
-                    <strong>
-                      Tailored cover-letter, email and thank you letter template
-                    </strong>{' '}
-                    - $75
-                  </li>
-                  <li>
-                    <strong>Complete LinkedIn Profile Revamp</strong> – $350
-                  </li>
-                  <li>
-                    <strong>
-                      Personalized job search strategy roadmap session (50
-                      minutes)
-                    </strong>{' '}
-                    - $200 <br />
-                    On this 50 minute call we will develop a strategic plan on
-                    how to:{' '}
-                    <ul style={{ marginBottom: '0' }}>
+                  {add_on_pricing.map((item, idx) => (
+                    <div key={idx}>
                       <li>
-                        Network directly with recruiters and hiring managers.
+                        <strong>{item.name}</strong>{' '}
+                        {item.price ? `- ${item.price}` : <div />}
                       </li>
-                      <li>
-                        Establish yourself as a thought leader in your field.
-                      </li>
-                      <li>Target specific organizations and industries.</li>
-                      <li>Promote yourself to potential employers.</li>
-                    </ul>
-                  </li>
-                  <li>
-                    <strong>Live Resume review via google hangout</strong> -
-                    $200 <br />
-                    <i>
-                      During this 20 minute call I will go over your current
-                      resume while sharing my screen. I will provide you with in
-                      depth advice and suggestions on how you can revamp your
-                      current resume, add in specific key words and get past the
-                      “black hole” applicant tracking system (ATS).
-                    </i>
-                  </li>
-                  <li>
-                    <strong>
-                      Pdf tip sheets and instructional how-to videos on how
-                      based on your specific needs
-                    </strong>{' '}
-                    - $25{' '}
-                  </li>
-                  <li>
-                    <strong>Job Coaching 1 on 1 sessions</strong>: In these
-                    sessions I personally work one on one with you to help you
-                    clearly identify your skills and using those skills to help
-                    you discover your perfect job and how to land that job.
-                  </li>{' '}
+                      {item.other ? <div>{item.other}</div> : <div />}
+                      {item.html ? <div>{item.html()}</div> : <div />}
+                    </div>
+                  ))}
                 </ul>
               </GridItem>
               <GridItem xs={12} className={classes.description}>
                 My process is as follows:
                 <ol>
-                  <li>
-                    <strong>Learn</strong>: Get to know you: Your past career
-                    history, likes, dislikes, “need to have’s” and “could live
-                    without’s”.
-                  </li>
-                  <li>
-                    <strong>Identify</strong>: Find out what fuels you and
-                    ignites your passion and use that to discover your dream
-                    job.
-                  </li>
-                  <li>
-                    <strong>Strategize</strong>: Establish a personalized
-                    roadmap to get you from where you are currently to receiving
-                    the offer for your dream job.
-                  </li>{' '}
-                  <li>
-                    <strong>Engage</strong>: Teach you how to engage with other
-                    professionals that are currently in your dream job and how
-                    to utilize those connections to land your dream job. These
-                    calls are guaranteed to give you clarity, motivation and
-                    most importantly, confidence in your job search.
-                  </li>
+                  {coaching_process.map((item, idx) => {
+                    let val = Object.values(item)
+                    return (
+                      <li key={idx}>
+                        <strong>{Object.keys(item)[0]}</strong>: {val}
+                      </li>
+                    )
+                  })}
                 </ol>
               </GridItem>
               <GridItem xs={12} className={classes.description}>

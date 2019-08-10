@@ -37,9 +37,22 @@ import cardProject6 from '../../../assets/img/examples/city.jpg'
 function SectionProjects({ ...props }) {
   const { classes, ...rest } = props
   return (
-    <div className="cd-section" {...rest}>
+    <div className="cd-section" {...rest} style={{ width: '100%' }}>
+      <div className={classes.container}>
+        <GridContainer>
+          <GridItem
+            xs={12}
+            className={`${classes.mlAuto} ${classes.mrAuto} ${
+              classes.textCenter
+            }`}
+          >
+            <h2 className={classes.title}>Recent Work</h2>
+            <h3 className={classes.subTitle}>Coming Soon!</h3>
+          </GridItem>
+        </GridContainer>
+      </div>
       {/* Project 1 START */}
-      <div className={classes.projects}>
+      {/* <div className={classes.projects}>
         <div className={classes.container}>
           <GridContainer>
             <GridItem
@@ -51,11 +64,8 @@ function SectionProjects({ ...props }) {
               }`}
             >
               <h2 className={classes.title}>Recent Work</h2>
-              <h3 className={classes.subTitle}>
-                Here we can list cards with links to files of examples you have
-                worked on.
-              </h3>
-              {/* <NavPills
+              <h3 className={classes.subTitle}>Coming Soon!</h3>
+               <NavPills
                 alignCenter
                 color="rose"
                 tabs={[
@@ -65,7 +75,7 @@ function SectionProjects({ ...props }) {
                   { tabButton: 'Productivity', tabContent: '' },
                   { tabButton: 'Web Design', tabContent: '' },
                 ]}
-              /> */}
+              /> 
               <div className={classes.tabSpace} />
             </GridItem>
           </GridContainer>
@@ -145,7 +155,7 @@ function SectionProjects({ ...props }) {
             </GridItem>
           </GridContainer>
         </div>
-      </div>
+      </div> */}
       {/* Project 1 END */}
       {/* Project 2 START */}
       {/* <div className={classes.projects}>

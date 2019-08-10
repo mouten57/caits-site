@@ -6,6 +6,8 @@ import {
   mrAuto,
   title,
   description,
+  instagramColor,
+  redditColor,
   cardTitle,
   roseColor,
   blackColor,
@@ -18,6 +20,8 @@ import popoverStyle from '../../popoverStyles'
 
 const pricingSection = {
   container,
+  instagramColor,
+  redditColor,
   mlAuto,
   mrAuto,
   title,

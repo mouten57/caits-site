@@ -15,6 +15,14 @@ import logo from '../../../assets/img/website-icon.png'
 class SectionIntro extends Component {
   render() {
     const { classes } = this.props
+    const questions = [
+      `Does your resume currently lack the “impressive” factor
+    when you see it?`,
+      ` Are you excited to send over your resume to future employers
+    or slightly ashamed?`,
+      ` Are you overwhelmed on where to start, what to say and how
+    to say it?`,
+    ]
     return (
       <div className={` ${classes.pricing}`} style={{ marginTop: '150px' }}>
         <div className={classes.container}>
@@ -26,59 +34,22 @@ class SectionIntro extends Component {
               }`}
             >
               <h2 className={classes.title}>Work With Me!</h2>
-              <div className={classes.intro}>
-                <h5 className={classes.description}>
-                  Think of Caitlin May Consulting as your on personal hype women
-                  and you are the “main performer”. My job is to{' '}
-                  <b>
-                    <i>inspire you</i>
-                  </b>
-                  ,
-                  <b>
-                    <i> motivate you</i>
-                  </b>{' '}
-                  and{' '}
-                  <b>
-                    <i>empower you</i>
-                  </b>{' '}
-                  in your job search. Your wins are my wins.
-                </h5>
-                <div>
-                  <h5 className={classes.description}>
-                    I can assure you I offer more than your average resume
-                    writer because I AM a current recruiter who knows how to:{' '}
-                  </h5>
-                  <ol
-                    style={{
-                      width: '80%',
-                      margin: '30px auto 40px auto',
-                      color: '#999999',
-                    }}
-                  >
-                    <li>Make a resume stand out from a crowd</li>
-                    <li>Effectively network to get your foot in the door</li>
-                    <li>Interview like a champ </li>
-                    <li>Boost your confidence to new levels </li>
-                    <li>Crush your job search.</li>
-                  </ol>
-                </div>
+              <div className>
+                <ul
+                  className={classes.description}
+                  style={{ listStyle: 'none' }}
+                >
+                  {questions.map((q, i) => (
+                    <li key={i}>
+                      <h5 className={classes.subTitle}>{q}</h5>
+                    </li>
+                  ))}
+                </ul>
+                <h4 className={classes.description}>
+                  Fear no more! I am here to help.{' '}
+                </h4>
               </div>
             </GridItem>
-            <GridItem
-              xs={12}
-              className={`${classes.mlAuto} ${classes.mrAuto} ${
-                classes.textCenter
-              }`}
-            >
-              <img
-                src={logo}
-                alt="logo"
-                style={{ width: '50%', maxWidth: '100%', margin: '0 auto' }}
-              />
-            </GridItem>
-            <GridContainer
-              style={{ display: 'flex', justifyContent: 'center' }}
-            />
           </GridContainer>
         </div>
       </div>
