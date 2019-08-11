@@ -1,5 +1,5 @@
 import React from 'react'
-import Mailchimp from 'react-mailchimp-form'
+import axios from 'axios'
 // material-ui components
 import withStyles from '@material-ui/core/styles/withStyles'
 import Slide from '@material-ui/core/Slide'
@@ -16,6 +16,7 @@ import Button from '../../components/CustomButtons/Button.jsx'
 import CustomInput from '../../components/CustomInput/CustomInput'
 import GridContainer from '../../components/Grid/GridContainer'
 import GridItem from '../../components/Grid/GridItem'
+import Form from './SignUpForm'
 
 import modalStyle from '../../assets/jss/modalStyle.jsx'
 
@@ -35,6 +36,19 @@ class Modal extends React.Component {
         email: '',
         message: '',
       },
+    }
+  }
+  componentDidMount() {
+    //sessionStorage.clear()
+    let visited = sessionStorage['alreadyVisited']
+    if (visited) {
+      sessionStorage.setItem('alreadyVisited', true)
+      this.setState({ modal: false })
+      //do not view Popup
+    } else {
+      //this is the first time
+      sessionStorage.setItem('alreadyVisited', true)
+      this.setState({ modal: true })
     }
   }
   handleClickOpen(modal) {
@@ -59,13 +73,6 @@ class Modal extends React.Component {
     const { name, email, message } = this.state
     return (
       <div>
-        {/* <Button
-          color="rose"
-          round
-          onClick={() => this.handleClickOpen('modal')}
-        >
-          Modal
-        </Button> */}
         <Dialog
           classes={{
             root: classes.center,
@@ -102,42 +109,27 @@ class Modal extends React.Component {
               Would you like to signup to receive all the most exciting news
               from Caitlin May Consulting?
             </h5>
-            <Mailchimp
-              action={url}
-              fields={[
-                {
-                  name: 'EMAIL',
-                  placeholder: 'Email',
-                  type: 'email',
-                  required: true,
-                },
-              ]}
-              messages={{
-                sending: 'Sending...',
-                success: 'Thank you for subscribing!',
-                error: 'An unexpected error has occurred.',
-                empty: 'You must write an e-mail.',
-                duplicate: 'Too many subscribe attempts for this email address',
-                button: 'Sign Me Up!',
-              }}
-            />
 
-            {/* <form
-              action="https://caitlinmayconsulting.us20.list-manage.com/subscribe/post?u=b64b0ed614b2044e686a801dc&id=b430f08be6"
+            <form
+              action="https://caitlinmayconsulting.us20.list-manage.com/subscribe/post"
               method="POST"
-              id="mc-embedded-subscribe-form"
-              name="mc-embedded-subscribe-form"
-              target="_blank"
+              encType="multipart/form-data"
+              data-dojo-attach-point="formNode"
+              noValidate
             >
+              <input type="hidden" name="u" value="b64b0ed614b2044e686a801dc" />
+              <input type="hidden" name="id" value="b430f08be6" />
               <GridContainer>
-                <GridItem xs={12} />
                 <GridItem xs={12}>
                   <CustomInput
                     labelText="Your Email"
                     inputProps={{
-                      name: 'email',
+                      type: 'text',
+                      name: 'EMAIL',
+                      id: 'mc-EMAIL',
+
                       value: email,
-                      type: 'email',
+
                       onChange: this.handleChange,
                     }}
                     id="email"
@@ -172,7 +164,7 @@ class Modal extends React.Component {
                   </Button>
                 </GridItem>
               </GridContainer>
-            </form> */}
+            </form>
           </DialogContent>
         </Dialog>
       </div>
