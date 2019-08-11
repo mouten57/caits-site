@@ -19,12 +19,11 @@ import GridItem from '../../components/Grid/GridItem'
 import Form from './SignUpForm'
 
 import modalStyle from '../../assets/jss/modalStyle.jsx'
+import logo from '../../assets/img/website-icon.png'
 
 const Transition = React.forwardRef(function Transition(props, ref) {
   return <Slide direction="down" ref={ref} {...props} />
 })
-const url =
-  'https://caitlinmayconsulting.us20.list-manage.com/subscribe/post?u=b64b0ed614b2044e686a801dc&amp;id=b430f08be6'
 
 class Modal extends React.Component {
   constructor(props) {
@@ -105,11 +104,17 @@ class Modal extends React.Component {
             id="modal-slide-description"
             className={classes.modalBody}
           >
-            <h5>
-              Would you like to signup to receive all the most exciting news
-              from Caitlin May Consulting?
-            </h5>
-
+            <GridContainer>
+              <GridItem xs={12}>
+                <h5>
+                  Would you like to signup to receive all the most exciting news
+                  from Caitlin May Consulting?
+                </h5>
+              </GridItem>
+              {/* <GridItem xs={6}>
+                <img src={logo} style={{ width: '100%' }} />
+              </GridItem> */}
+            </GridContainer>
             <form
               action="https://caitlinmayconsulting.us20.list-manage.com/subscribe/post"
               method="POST"

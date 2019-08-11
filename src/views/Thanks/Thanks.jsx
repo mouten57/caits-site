@@ -52,14 +52,12 @@ class Components extends React.Component {
                   md={12}
                   style={{ height: '650px', marginTop: '350px' }}
                 >
-                  <h1 className={classes.title}>Thanks!</h1>
+                  <h1 className={classes.title}>Success!</h1>
 
-                  <h4 className={classes.description}>
-                    Thank you for signing up, you won't regret it! Why don't you{' '}
+                  <h4 className={classes.description} style={{ width: '100%' }}>
                     <a href="/" className={classes.link}>
-                      check out the rest of the site
+                      Back Home
                     </a>{' '}
-                    while you're here?
                   </h4>
                 </GridItem>
               </GridContainer>
