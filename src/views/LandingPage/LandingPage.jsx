@@ -19,12 +19,32 @@ import SectionAbout from './Sections/SectionAbout.jsx';
 import logo from '../../assets/img/website-icon-white.png';
 
 class LandingPage extends React.Component {
+	constructor(props) {
+		super(props);
+		this.state = {
+			visited: false
+		};
+	}
+
 	componentDidMount() {
 		typeof window !== 'undefined' && window.scrollTo(0, 0);
 		document.body.scrollTop = 0;
+
+		//sessionStorage.clear()
+		let visited = sessionStorage['alreadyVisited'];
+		if (visited) {
+			sessionStorage.setItem('alreadyVisited', true);
+			this.setState({ visited: true });
+			//do not view Popup
+		} else {
+			//this is the first time
+			sessionStorage.setItem('alreadyVisited', true);
+			this.setState({ visited: false });
+		}
 	}
 	render() {
 		const { classes } = this.props;
+		console.log(this.state);
 
 		return (
 			<div>
@@ -64,7 +84,7 @@ class LandingPage extends React.Component {
 					<div className={classes.container}>
 						<SectionIntro />
 
-						{/* <SignUpModal /> */}
+						{!this.state.visited ? <SignUpModal /> : <div />}
 						<Testimonials />
 						<SectionAbout />
 						<SectionWork />

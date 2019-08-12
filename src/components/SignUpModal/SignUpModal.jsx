@@ -35,19 +35,7 @@ class Modal extends React.Component {
 			}
 		};
 	}
-	componentDidMount() {
-		//sessionStorage.clear()
-		let visited = sessionStorage['alreadyVisited'];
-		if (visited) {
-			sessionStorage.setItem('alreadyVisited', true);
-			this.setState({ modal: false });
-			//do not view Popup
-		} else {
-			//this is the first time
-			sessionStorage.setItem('alreadyVisited', true);
-			this.setState({ modal: true });
-		}
-	}
+
 	handleClickOpen(modal) {
 		var x = [];
 		x[modal] = true;
@@ -102,9 +90,6 @@ class Modal extends React.Component {
 									Consulting?
 								</h5>
 							</GridItem>
-							{/* <GridItem xs={6}>
-                <img src={logo} style={{ width: '100%' }} />
-              </GridItem> */}
 						</GridContainer>
 						<form
 							action="https://caitlinmayconsulting.us20.list-manage.com/subscribe/post"
