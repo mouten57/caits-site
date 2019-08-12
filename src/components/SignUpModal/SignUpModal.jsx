@@ -80,7 +80,9 @@ class Modal extends React.Component {
 						>
 							<Close className={classes.modalClose} />
 						</IconButton>
-						<h4 className={classes.modalTitle}>Sign Up for CMC Newsletter</h4>
+						<h4 className={classes.modalTitle} style={{ fontWeight: 'bold' }}>
+							Monthly Career Corner Newsletter
+						</h4>
 					</DialogTitle>
 					<DialogContent id="modal-slide-description" className={classes.modalBody}>
 						<GridContainer>
