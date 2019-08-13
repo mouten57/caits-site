@@ -30,8 +30,8 @@ const WorkWithMe = (props) => {
 					<SectionPicNBlurb />
 					<WhyChoseCMC />
 					<MyProcess />
-					<SectionProjects />
 					<SectionPricing />
+					<SectionProjects />
 				</GridContainer>
 			</div>
 		</div>
