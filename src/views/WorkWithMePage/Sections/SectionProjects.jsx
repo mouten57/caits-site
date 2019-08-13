@@ -44,7 +44,7 @@ function SectionProjects({ ...props }) {
 							Recent Work
 						</h2>
 					</GridItem>
-					<Hidden xs>
+					<Hidden xsDown>
 						<GridItem xs={12} style={{ height: '100%' }}>
 							<Carousel {...settings}>
 								{myLinks.map((link, idx) => (
