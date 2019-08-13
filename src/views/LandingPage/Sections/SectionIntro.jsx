@@ -93,6 +93,11 @@ class SectionIntro extends React.Component {
 									</CardBody>
 								</Card>
 							</GridItem>
+							<Hidden mdUp>
+								<GridItem xs={12}>
+									<img src={logo} style={{ width: '100%', margin: '0 auto' }} alt="logo" />
+								</GridItem>
+							</Hidden>
 						</GridItem>
 					</GridContainer>
 				</div>

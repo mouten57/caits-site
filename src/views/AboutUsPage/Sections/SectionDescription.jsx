@@ -9,18 +9,18 @@ import withStyles from '@material-ui/core/styles/withStyles';
 
 import descriptionStyle from '../../../assets/jss/views/aboutUsSections/descriptionStyle.jsx';
 
-import aboutImage from '../../../assets/img/profilepic.jpeg';
+import aboutImage from '../../../assets/img/Caitlin-Work_with_me.jpg';
 
 function SectionDescription(props) {
 	const { classes } = props;
 	return (
 		<div className={classNames(classes.aboutDescription, classes.textCenter)}>
 			<GridContainer>
-				<GridItem xs={12} sm={5} md={7} style={{ margin: '0 auto' }}>
+				<GridItem xs={12} md={7} style={{ margin: '0 auto', alignSelf: 'center' }}>
 					<img src={aboutImage} alt="about" style={{ maxWidth: '100%', paddingBottom: '20px' }} />
 				</GridItem>
 
-				<GridItem xs={12} sm={12} md={5}>
+				<GridItem xs={12} md={5}>
 					<GridContainer
 						style={{
 							height: '90%',

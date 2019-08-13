@@ -5,7 +5,7 @@ import withStyles from '@material-ui/core/styles/withStyles';
 import GridContainer from '../../../components/Grid/GridContainer.jsx';
 import GridItem from '../../../components/Grid/GridItem.jsx';
 import pricingStyle from '../../../assets/jss/views/sectionsSections/pricingStyle.jsx';
-import pic from '../../../assets/img/work_with_me_profile_pic.jpg';
+import pic from '../../../assets/img/Caitlin-Work_with_me.jpg';
 
 class SectionIntro extends Component {
 	render() {
