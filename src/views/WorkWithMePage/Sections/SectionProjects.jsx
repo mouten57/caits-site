@@ -1,5 +1,6 @@
 /* eslint-disable */
 import React from 'react';
+import Carousel from 'react-slick';
 // @material-ui/core components
 import withStyles from '@material-ui/core/styles/withStyles';
 
@@ -14,13 +15,24 @@ import projectsStyle from '../../../assets/jss/views/sectionsSections/projectsSt
 const links = [
 	'https://drive.google.com/file/d/1kyUhHG_kMrSp5_bEBuGrs7MKnCaha6wF/preview',
 	'https://drive.google.com/file/d/1x1FCfrDLqYGvsSUVo4LtbZXiv09rRHVi/preview',
-	'https://drive.google.com/file/d/1RYJmGidOe-eu7MyIyS3FpPEnwJhUdpsz/preview'
+	'https://drive.google.com/file/d/1RYJmGidOe-eu7MyIyS3FpPEnwJhUdpsz/preview',
+	'https://drive.google.com/file/d/1P1_iWLcapnYaphJUZOpyuiF0drbyizL5/preview'
 ];
 
 function SectionProjects({ ...props }) {
 	const { classes, ...rest } = props;
+	const settings = {
+		dots: true,
+		// infinite: true,
+		speed: 500,
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		// autoplay: true,
+		// autoplaySpeed: 10000,
+		cssEase: 'linear'
+	};
 	return (
-		<div className="cd-section" {...rest} style={{ width: '100%' }}>
+		<div className="cd-section" {...rest}>
 			<div className={classes.container}>
 				<GridContainer>
 					<GridItem xs={12} className={`${classes.mlAuto} ${classes.mrAuto} ${classes.textCenter}`}>
@@ -28,19 +40,30 @@ function SectionProjects({ ...props }) {
 							Recent Work
 						</h2>
 					</GridItem>
-					{links.map((link, i) => (
+					<GridItem xs={12}>
+						<Carousel {...settings}>
+							{links.map((link, idx) => (
+								<GridItem key={idx} xs={12}>
+									<iframe src={`${link}`} width="100%" height="480" />
+								</GridItem>
+							))}
+						</Carousel>
+					</GridItem>
+					{/* {links.map((link, i) => (
 						<GridItem key={i} xs={12} sm={6} lg={4} style={{ marginTop: '15px' }}>
 							<iframe src={`${link}`} width="100%" height="480" />
 						</GridItem>
-					))}
-					{/* bottom one couldnt be mapped bc it stretches 12 if large */}
+					))} 
+					 bottom one couldnt be mapped bc it stretches 12 if large 
 					<GridItem xs={12} sm={6} lg={12} style={{ marginTop: '15px' }}>
 						<iframe
 							src="https://drive.google.com/file/d/1P1_iWLcapnYaphJUZOpyuiF0drbyizL5/preview"
 							width="100%"
 							height="480"
 						/>
+						
 					</GridItem>
+					*/}
 				</GridContainer>
 			</div>
 
