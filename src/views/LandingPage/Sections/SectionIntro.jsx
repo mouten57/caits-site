@@ -15,15 +15,12 @@ import CardBody from '../../../components/Card/CardBody.jsx';
 
 //import Muted from '../../../components/Typography/Muted.jsx'
 import Button from '../../../components/CustomButtons/Button.jsx';
-
-// import cardProfile1Square from '../../../assets/img/faces/card-profile1-square.jpg'
-// import cardProfile2Square from '../../../assets/img/faces/card-profile2-square.jpg'
-// import cardProfile4Square from '../../../assets/img/faces/card-profile4-square.jpg'
-// import cardProfile6Square from '../../../assets/img/faces/card-profile6-square.jpg'
+import Hidden from '@material-ui/core/Hidden';
 
 import teamsStyle from '../../../assets/jss/views/sectionsSections/teamsStyle.jsx';
 import teamStyle from '../../../assets/jss/views/landingPageSections/teamStyle.jsx';
 import profilepic from '../../../assets/img/profilepic.jpeg';
+import logo from '../../../assets/img/website-icon.png';
 
 const style = {
 	...teamsStyle,
@@ -47,7 +44,7 @@ class SectionIntro extends React.Component {
 			<div className={`${classes.team} ${classes.section}`}>
 				<div className={classes.container}>
 					<GridContainer direction={'row'}>
-						<GridItem xs={12} sm={7} md={7}>
+						<GridItem xs={12} md={7} style={{ alignSelf: 'center' }}>
 							<img
 								src={profilepic}
 								style={{
@@ -59,33 +56,43 @@ class SectionIntro extends React.Component {
 								alt="profile pic"
 							/>
 						</GridItem>
-						<GridItem xs={12} sm={5} md={5} style={{ alignSelf: 'center' }}>
-							<Card profile>
-								<CardBody>
-									<h4 className={classes.cardTitle}>
-										Ready to take your job search to the next level and find your dream job?
-									</h4>
 
-									<p className={classes.description}>
+						<GridItem xs={12} md={5} style={{ alignSelf: 'center' }}>
+							<Hidden smDown>
+								<GridItem xs={12}>
+									<img src={logo} style={{ width: '100%', margin: '0 auto' }} alt="logo" />
+								</GridItem>
+							</Hidden>
+							<GridItem xs={12} style={{ alignSelf: 'center' }}>
+								<Card profile>
+									<CardBody>
+										<h4 className={classes.cardTitle}>
+											Ready to take your job search to the next level and find your dream job?
+										</h4>
+
+										<p className={classes.description}>
+											<a
+												href="https://caitlinmayconsulting.as.me/FREECONSULT"
+												target="_blank"
+												rel="noopener noreferrer"
+												className={classes.link}
+											>
+												Sign up today
+											</a>{' '}
+											for a free 15 minute phone consultation!
+										</p>
 										<a
 											href="https://caitlinmayconsulting.as.me/FREECONSULT"
 											target="_blank"
 											rel="noopener noreferrer"
-											className={classes.link}
 										>
-											Sign up today
-										</a>{' '}
-										for a free 15 minute phone consultation!
-									</p>
-									<a
-										href="https://caitlinmayconsulting.as.me/FREECONSULT"
-										target="_blank"
-										rel="noopener noreferrer"
-									>
-										<Button color="rose">Learn More!</Button>
-									</a>
-								</CardBody>
-							</Card>
+											<Button color="rose" style={{ width: '100%' }}>
+												Learn More!
+											</Button>
+										</a>
+									</CardBody>
+								</Card>
+							</GridItem>
 						</GridItem>
 					</GridContainer>
 				</div>

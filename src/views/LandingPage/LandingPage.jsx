@@ -16,7 +16,7 @@ import SectionIntro from './Sections/SectionIntro.jsx';
 import SectionWork from './Sections/SectionWork.jsx';
 import SectionAbout from './Sections/SectionAbout.jsx';
 
-import logo from '../../assets/img/website-icon-white.png';
+//import logo from '../../assets/img/website-icon-white.png';
 
 class LandingPage extends React.Component {
 	constructor(props) {
