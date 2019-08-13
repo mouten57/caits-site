@@ -9,7 +9,7 @@ import withStyles from '@material-ui/core/styles/withStyles';
 
 import descriptionStyle from '../../../assets/jss/views/aboutUsSections/descriptionStyle.jsx';
 
-import aboutImage from '../../../assets/img/Caitlin-Work_with_me.jpg';
+import aboutImage from '../../../assets/img/Caitlin_About_me.jpg';
 
 function SectionDescription(props) {
 	const { classes } = props;

@@ -19,7 +19,7 @@ import Hidden from '@material-ui/core/Hidden';
 
 import teamsStyle from '../../../assets/jss/views/sectionsSections/teamsStyle.jsx';
 import teamStyle from '../../../assets/jss/views/landingPageSections/teamStyle.jsx';
-import profilepic from '../../../assets/img/profilepic.jpeg';
+import profilepic from '../../../assets/img/Caitlin_1.jpg';
 import logo from '../../../assets/img/website-icon.png';
 
 const style = {
