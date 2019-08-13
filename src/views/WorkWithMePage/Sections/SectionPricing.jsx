@@ -2,26 +2,13 @@ import React, { Component } from 'react'
 // @material-ui/core components
 import withStyles from '@material-ui/core/styles/withStyles'
 // @material-ui/icons
-import Person from '@material-ui/icons/Person'
-import Edit from '@material-ui/icons/Edit'
-import Weekend from '@material-ui/icons/Weekend'
-import Home from '@material-ui/icons/Home'
-import Business from '@material-ui/icons/Business'
-import AccountBalance from '@material-ui/icons/AccountBalance'
 import Check from '@material-ui/icons/Check'
-import Close from '@material-ui/icons/Close'
-import Tooltip from '@material-ui/core/Tooltip'
-import Popover from '@material-ui/core/Popover'
+
 // core components
 import GridContainer from '../../../components/Grid/GridContainer.jsx'
 import GridItem from '../../../components/Grid/GridItem.jsx'
-import Card from '../../../components/Card/Card.jsx'
-import CardBody from '../../../components/Card/CardBody.jsx'
-import CardFooter from '../../../components/Card/CardFooter.jsx'
 import Button from '../../../components/CustomButtons/Button.jsx'
-import Success from '../../../components/Typography/Success.jsx'
 import Table from '../../../components/Table/Table.jsx'
-import Danger from '../../../components/Typography/Danger.jsx'
 
 import pricingStyle from '../../../assets/jss/views/sectionsSections/pricingStyle.jsx'
 import { add_on_pricing, coaching_process } from './add_on_pricing'

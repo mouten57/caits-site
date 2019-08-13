@@ -11,7 +11,7 @@ import withStyles from '@material-ui/core/styles/withStyles';
 
 // import Header from '../../components/Header/Header.jsx'
 import GridContainer from '../../components/Grid/GridContainer.jsx';
-import GridItem from '../../components/Grid/GridItem.jsx';
+//import GridItem from '../../components/Grid/GridItem.jsx';
 import Parallax from '../../components/Parallax/Parallax.jsx';
 // import Footer from '../../components/Footer/Footer.jsx'
 // sections for this page

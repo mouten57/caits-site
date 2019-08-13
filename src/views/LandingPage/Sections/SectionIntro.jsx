@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'gatsby';
+//import { Link } from 'gatsby';
 // @material-ui/core components
 import withStyles from '@material-ui/core/styles/withStyles';
 // @material-ui/icons
@@ -70,13 +70,18 @@ class SectionIntro extends React.Component {
 										<a
 											href="https://caitlinmayconsulting.as.me/FREECONSULT"
 											target="_blank"
+											rel="noopener noreferrer"
 											className={classes.link}
 										>
 											Sign up today
 										</a>{' '}
 										for a free 15 minute phone consultation!
 									</p>
-									<a href="https://caitlinmayconsulting.as.me/FREECONSULT" target="_blank">
+									<a
+										href="https://caitlinmayconsulting.as.me/FREECONSULT"
+										target="_blank"
+										rel="noopener noreferrer"
+									>
 										<Button color="rose">Learn More!</Button>
 									</a>
 								</CardBody>

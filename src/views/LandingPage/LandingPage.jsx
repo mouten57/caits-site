@@ -11,7 +11,7 @@ import SignUpModal from '../../components/SignUpModal/SignUpModal';
 //import profilePageStyle from '../../assets/jss/views/profilePageStyle.jsx'
 // Sections for this page
 // import SectionProduct from './Sections/SectionProduct.jsx'
-import Testimonials from '../../components/Sections/Testimonials';
+import Testimonials from '../../components/Sections/Testimonials/Testimonials';
 import SectionIntro from './Sections/SectionIntro.jsx';
 import SectionWork from './Sections/SectionWork.jsx';
 import SectionAbout from './Sections/SectionAbout.jsx';
@@ -47,35 +47,28 @@ class LandingPage extends React.Component {
 		console.log(this.state);
 
 		return (
-			<div>
-				<Parallax image={require('../../../src/assets/img/Youve_got_this.jpg')} filter="dark">
-					<div className={classes.container}>
-						<GridContainer>
-							<GridItem xs={12} sm={12} md={4}>
-								<div
-									style={{
-										display: 'flex',
-										alignContent: 'center',
-										justifyContent: 'center',
-										alignItems: 'center',
-										justifyItems: 'center',
-										height: '100%'
-									}}
-								>
-									<h2
-										className={classes.title}
-										style={{
-											justifySelf: 'center',
-											textAlign: 'center',
-											width: '100%'
-										}}
-									>
-										The Career Corner.
-									</h2>
-								</div>
-							</GridItem>
-							<GridItem xs={12} sm={12} md={8}>
-								<img src={logo} style={{ width: '100%' }} alt="logo" />
+			<div className={`${classes.team} ${classes.section}`}>
+				<Parallax
+					image={require('../../../src/assets/img/Youve_got_this.jpg')}
+					filter="dark"
+					style={{ maxHeight: '500px' }}
+				>
+					<div className={classes.container} style={{ height: '70%', padding: '0', margin: '0 auto' }}>
+						{/* <GridItem xs={6}>
+								<img src={logo} style={{ width: '100%', margin: '0 auto' }} alt="logo" />
+							</GridItem> */}
+						<GridContainer style={{ padding: '0', margin: '0' }}>
+							<GridItem
+								xs={12}
+								style={{
+									backgroundColor: 'rgba(0, 0, 0, 0.55)',
+									textAlign: 'center',
+									borderRadius: '10px',
+									margin: '0',
+									padding: '0 auto'
+								}}
+							>
+								<h2 className={classes.title}>The Career Corner.</h2>
 							</GridItem>
 						</GridContainer>
 					</div>

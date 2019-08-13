@@ -55,7 +55,7 @@ class Modal extends React.Component {
 	};
 	render() {
 		const { classes } = this.props;
-		const { name, email, message } = this.state;
+		const { email } = this.state;
 		return (
 			<div>
 				<Dialog
