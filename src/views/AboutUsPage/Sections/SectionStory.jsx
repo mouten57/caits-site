@@ -1,121 +1,102 @@
-import React from 'react'
+import React from 'react';
 // nodejs library that concatenates classes
-import classNames from 'classnames'
+import classNames from 'classnames';
 // core components
-import GridContainer from '../../../components/Grid/GridContainer.jsx'
-import GridItem from '../../../components/Grid/GridItem.jsx'
-import Card from '../../../components/Card/Card.jsx'
-import CardBody from '../../../components/Card/CardBody.jsx'
-import withStyles from '@material-ui/core/styles/withStyles'
+import GridContainer from '../../../components/Grid/GridContainer.jsx';
+import GridItem from '../../../components/Grid/GridItem.jsx';
+import Card from '../../../components/Card/Card.jsx';
+import CardBody from '../../../components/Card/CardBody.jsx';
+import withStyles from '@material-ui/core/styles/withStyles';
 
-import storyStyle from '../../../assets/jss/views/aboutUsSections/storyStyle.jsx'
+import storyStyle from '../../../assets/jss/views/aboutUsSections/storyStyle.jsx';
+
+const style = {
+	...storyStyle,
+	link: {
+		color: 'inherit',
+		fontWeight: '500',
+		'&:visited': {
+			color: 'grey'
+		},
+		'&:hover': {
+			color: 'blue'
+		}
+	}
+};
 
 function SectionStory(props) {
-  const { classes } = props
-  return (
-    <div className={classes.team}>
-      <GridContainer>
-        <GridItem
-          md={8}
-          sm={8}
-          className={classNames(
-            classes.mrAuto,
-            classes.mlAuto,
-            classes.textCenter
-          )}
-        >
-          <h3 className={classes.title}>
-            What job seekers think recruiters do:
-          </h3>
-          <h5 className={classes.description}>Help people find jobs.</h5>
-          <h3 className={classes.title}>What recruiters actually do:</h3>
-          <h5 className={classes.description}>
-            Fill open positions for the company/client.
-          </h5>
-        </GridItem>
-      </GridContainer>
-      <GridContainer>
-        <GridItem md={12} sm={12}>
-          <Card plain>
-            <CardBody plain style={{ paddingTop: '0' }}>
-              <h4
-                className={classes.cardTitle}
-                style={{ marginTop: '0', textAlign: 'center' }}
-              >
-                My Story
-              </h4>
+	const { classes } = props;
+	return (
+		<div className={classes.team}>
+			<GridContainer>
+				<GridItem md={8} sm={8} className={classNames(classes.mrAuto, classes.mlAuto, classes.textCenter)}>
+					<h3 className={classes.title}>What job seekers think recruiters do:</h3>
+					<h5 className={classes.description}>Help people find jobs.</h5>
+					<h3 className={classes.title}>What recruiters actually do:</h3>
+					<h5 className={classes.description}>Fill open positions for the company/client.</h5>
+				</GridItem>
+			</GridContainer>
+			<GridContainer>
+				<GridItem md={12} sm={12}>
+					<Card plain>
+						<CardBody plain style={{ paddingTop: '0' }}>
+							<h4 className={classes.cardTitle} style={{ marginTop: '0', textAlign: 'center' }}>
+								My Story
+							</h4>
 
-              <p className={classes.cardDescription}>
-                When I first got into recruiting I also thought I was hired to
-                help people find jobs and everyone who was qualified and
-                hardworking would have a happy ending.
-              </p>
-              <p className={classes.cardDescription}>
-                Unfortunately that is a fairytale and we now know why you don’t
-                see any Disney movies based off <i>"the recruiter who cares"</i>
-                .
-              </p>
-              <p className={classes.cardDescription}>
-                I think this actually made me a sub-par recruiter because I
-                cared more about the candidate than the client.
-              </p>
-              <p className={classes.cardDescription}>
-                And this is why good recruiters get a bad reputation because
-                they are good at filling their jobs for the client, not so much
-                helping people find jobs. Yes, they fill their openings and as a
-                result candidates get a job and are happy but that is not WHY a
-                recruiter is in business.
-              </p>
-              <p className={classes.cardDescription}>
-                So you can imagine my frustration when I only had openings for a
-                very small pool of candidates with X,Y & Z skills and I would
-                have 50+ job seekers reaching out to me daily via phone, email
-                and social media who were highly qualified and driven, but they
-                did not have the X,Y and Z skills that I needed for my client.
-              </p>
-              <p className={classes.cardDescription}>
-                Basically I could only help about 5% of the entire job seeker
-                population and that <strong>SUCKED</strong>.
-              </p>
-              <p className={classes.cardDescription}>
-                It especially broke my heart when I had top-notch, recently laid
-                off candidates who had several University Degrees and
-                certification along with 15+ years of experience and were
-                applying to my positions that were entry level job.
-              </p>
-              <p className={classes.cardDescription}>
-                To me it seemed like there is clearly a huge misunderstanding
-                between the way employers look for candidates and how candidates
-                look for employers.
-              </p>
-              <hr />
-              <p className={classes.cardDescription}>
-                And that is why I started Caitlin May Consulting. To help the
-                other 95% of qualified job seekers who have been applying to
-                100’s of jobs with no feedback, thrown into the “overqualified”
-                pile of resumes, ignored by recruiters, and just plain
-                frustrated with the whole job searching process.
-              </p>
-              <p className={classes.cardDescription}>
-                If you fit into one of those categories, look no further. I am
-                here to help.
-              </p>
-              <p className={classes.cardDescription}>
-                As a previous “sub-par” agency recruiter, who now works for the
-                largest e-commerce company in the world, I know a thing or two
-                about how to get a employers attention and I want to use those
-                tips to help you find your dream job as well.
-              </p>
-              <p className={classes.cardDescription}>
-                Believe it or not, you have more control over your job seeking
-                journey than you think and I am here to help guide you!
-              </p>
-            </CardBody>
-          </Card>
-        </GridItem>
-      </GridContainer>
-    </div>
-  )
+							<p className={classes.cardDescription}>My name is Caitlin. </p>
+							<p className={classes.cardDescription}>
+								I am a recruiter by day and a resume writer/career coach by night and I LOVE what I do.{' '}
+							</p>
+							<p className={classes.cardDescription}>
+								I am here to tell you that you do not have to sacrifice your happiness or salary for
+								your dream job. I’ve helped clients land jobs with companies all over the nation within
+								multiple industries and I can do the same for you. As a recruiter, I get an inside view
+								into the hiring world; to leveraging the strategies and tactics acquired throughout my
+								career. I’ve also coached hundreds of professionals out of their dull, unrewarding jobs
+								and into the careers they love.{' '}
+							</p>
+							<h5 className={classes.description} style={{ fontWeight: 'bold', marginBottom: '5px' }}>
+								My History:
+							</h5>
+							<p className={classes.cardDescription}>
+								2013 I graduated with a Bachelor’s Degree in Human Resources and I knew I wanted to find
+								a career where I could help others. I landed my first job as a recruiting assistant and
+								I was hooked from there.{' '}
+							</p>
+							<p className={classes.cardDescription}>
+								Throughout the years I gained experience within multiple industries including staffing
+								agencies and recruiting for large corporations. I learned exactly what hiring managers
+								were looking for and how candidates needed to present themselves on paper and in-person
+								to land the job.{' '}
+							</p>
+							<p className={classes.cardDescription}>
+								In 2017 after being in the recruiting world for some time, I realized that my true
+								passion lied within resume writing and coaching clients on these skills I have obtained
+								– and they could take these skills with them anywhere! That’s when Caitlin May
+								Consulting was created. I am in the business of making a difference in people’s lives
+								and building personal relationships, giving REAL advice and strategies that get results
+								for job seekers of any level.
+							</p>
+							<hr />
+							<p className={classes.cardDescription}>
+								Want to learn more?{' '}
+								<a
+									href="https://caitlinmayconsulting.as.me/FREECONSULT"
+									target="_blank"
+									rel="noopener noreferrer"
+									className={classes.link}
+								>
+									Sign up for your free 15 minute phone consultation
+								</a>{' '}
+								TODAY!
+							</p>
+						</CardBody>
+					</Card>
+				</GridItem>
+			</GridContainer>
+		</div>
+	);
 }
 
-export default withStyles(storyStyle)(SectionStory)
+export default withStyles(style)(SectionStory);
