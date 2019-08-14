@@ -49,9 +49,8 @@ class SectionIntro extends React.Component {
 								src={profilepic}
 								style={{
 									width: '100%',
-									borderRadius: '20px',
-									maxHeight: '700px',
-									maxWidth: '480px'
+									margin: '0 auto',
+									borderRadius: '20px'
 								}}
 								alt="profile pic"
 							/>
@@ -93,12 +92,12 @@ class SectionIntro extends React.Component {
 									</CardBody>
 								</Card>
 							</GridItem>
-							<Hidden mdUp>
-								<GridItem xs={12}>
-									<img src={logo} style={{ width: '100%', margin: '0 auto' }} alt="logo" />
-								</GridItem>
-							</Hidden>
 						</GridItem>
+						<Hidden mdUp>
+							<GridItem xs={12} style={{ marginTop: '38px' }}>
+								<img src={logo} style={{ width: '100%', margin: '0 auto' }} alt="logo" />
+							</GridItem>
+						</Hidden>
 					</GridContainer>
 				</div>
 			</div>
