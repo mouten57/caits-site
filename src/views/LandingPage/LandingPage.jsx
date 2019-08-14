@@ -51,7 +51,7 @@ class LandingPage extends React.Component {
 				<Parallax
 					image={require('../../../src/assets/img/Youve_got_this.jpg')}
 					filter="dark"
-					style={{ maxHeight: '500px' }}
+					style={{ maxHeight: '400px' }}
 				>
 					<div className={classes.container} style={{ height: '70%', padding: '0', margin: '0 auto' }}>
 						{/* <GridItem xs={6}>
