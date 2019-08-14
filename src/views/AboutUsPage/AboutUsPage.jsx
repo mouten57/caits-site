@@ -18,9 +18,8 @@ import Parallax from '../../components/Parallax/Parallax.jsx';
 // import HeaderLinks from '../../components/Header/HeaderLinks.jsx'
 import SectionDescription from './Sections/SectionDescription.jsx';
 import SectionStory from './Sections/SectionStory.jsx';
-// import SectionServices from './Sections/SectionServices.jsx'
-// import SectionOffice from './Sections/SectionOffice.jsx'
 import SectionContact from './Sections/SectionContact';
+import ProfMemberships from './Sections/ProfMemberships';
 
 import aboutUsStyle from '../../assets/jss/views/aboutUsStyle.jsx';
 
@@ -36,28 +35,14 @@ class AboutUsPage extends React.Component {
 			<div>
 				<Parallax image={require('../../assets/img/CMC_BG_2.jpg')} filter="white" small>
 					<div className={classes.container}>
-						<GridContainer justify="center">
-							{/* <GridItem
-                md={8}
-                sm={8}
-                className={classNames(
-                  classes.mlAuto,
-                  classes.mrAuto,
-                  classes.textCenter
-                )}
-              >
-                <h1 className={classes.title}>About Me</h1>
-                <h4>Meet the founder of Caitlin May Consulting.</h4>
-              </GridItem> */}
-						</GridContainer>
+						<GridContainer justify="center" />
 					</div>
 				</Parallax>
 				<div className={classNames(classes.main, classes.mainRaised)}>
 					<div className={classes.container}>
 						<SectionDescription />
 						<SectionStory />
-						{/* <SectionServices />
-              <SectionOffice /> */}
+						<ProfMemberships />
 						<SectionContact />
 					</div>
 				</div>
