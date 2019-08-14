@@ -69,7 +69,7 @@ class SectionPricing extends Component {
 									tableHead={[ 'JOB SEARCH PACKAGES', 'Bronze', 'Gold', 'Platinum' ]}
 									tableData={[
 										[
-											'Pre-Resume Career Branding Session call (50 minutes): Instead of sending over a long questionnaire, I will schedule a call where I will learn more about your background, figure out your strengths, weakness and “All Star” qualities to showcase your resume in the best light possible',
+											'Pre-Resume Career Branding Session call (50 minutes)',
 											simpleCheck,
 											simpleCheck,
 											simpleCheck
@@ -113,13 +113,13 @@ class SectionPricing extends Component {
 											simpleCheck
 										],
 										[
-											'Follow up thank you letter template, tip sheets and tailored resources geared towards your unique needs.',
+											'Follow up thank you letter template, tip sheets and tailored resources geared towards your unique needs',
 											'',
 											simpleCheck,
 											simpleCheck
 										],
 										[
-											'Unlimited email support throughout your job search.',
+											'Unlimited email support throughout your job search',
 											simpleCheck,
 											simpleCheck,
 											simpleCheck
@@ -155,7 +155,7 @@ class SectionPricing extends Component {
 								</ul>
 							</GridItem>
 							<GridItem xs={12} className={classes.description}>
-								My process is as follows:
+								<strong style={{ textDecoration: 'underline' }}>My process is as follows</strong>:
 								<ol>
 									{coaching_process.map((item, idx) => {
 										let val = Object.values(item);
