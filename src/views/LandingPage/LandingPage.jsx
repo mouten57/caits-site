@@ -18,28 +18,50 @@ import SectionAbout from './Sections/SectionAbout.jsx';
 
 //import logo from '../../assets/img/website-icon-white.png';
 
+const daysBetween = (date1, date2) => {
+	//Get 1 day in milliseconds
+
+	var one_day = 1000 * 60 * 60 * 24;
+	// Convert both dates to milliseconds
+	var date1_ms = Number(date1);
+	var date2_ms = date2.getTime();
+	// Calculate the difference in milliseconds
+	var difference_ms = date2_ms - date1_ms;
+	// Convert back to days and return
+	return Math.round(difference_ms / one_day) - 1;
+};
+
 class LandingPage extends React.Component {
 	constructor(props) {
 		super(props);
 		this.state = {
-			visited: false
+			showPopup: false
 		};
 	}
 
 	componentDidMount() {
+		// localStorage.clear();
 		typeof window !== 'undefined' && window.scrollTo(0, 0);
 		document.body.scrollTop = 0;
 
-		//sessionStorage.clear()
-		let visited = sessionStorage['alreadyVisited'];
-		if (visited) {
-			sessionStorage.setItem('alreadyVisited', true);
-			this.setState({ visited: true });
-			//do not view Popup
-		} else {
-			//this is the first time
-			sessionStorage.setItem('alreadyVisited', true);
-			this.setState({ visited: false });
+		let signUpAccepted = localStorage.getItem('signUpAccepted');
+		let lastVisit = JSON.parse(localStorage.getItem('lastVisit'));
+		console.log(signUpAccepted, lastVisit);
+
+		let today = new Date();
+
+		if (signUpAccepted != true) {
+			let dayDiff = daysBetween(lastVisit, today);
+
+			if (lastVisit != null && dayDiff > 3) {
+				this.setState({ showPopup: true });
+				localStorage.setItem('lastVisit', today.getTime());
+			} else if (lastVisit != null && dayDiff <= 3) {
+				this.setState({ showPopup: false });
+			} else {
+				this.setState({ showPopup: true });
+				localStorage.setItem('lastVisit', today.getTime());
+			}
 		}
 	}
 	render() {
@@ -77,7 +99,7 @@ class LandingPage extends React.Component {
 					<div className={classes.container}>
 						<SectionIntro />
 
-						{!this.state.visited ? <SignUpModal /> : <div />}
+						{this.state.showPopup ? <SignUpModal /> : <div />}
 						<Testimonials />
 						<SectionAbout />
 						<SectionWork />

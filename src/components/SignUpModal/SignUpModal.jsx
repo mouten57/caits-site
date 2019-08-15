@@ -46,6 +46,12 @@ class Modal extends React.Component {
 		x[modal] = false;
 		this.setState(x);
 	}
+	handleAccepted(modal) {
+		var x = [];
+		x[modal] = false;
+		this.setState(x);
+		localStorage.setItem('signUpAccepted', true);
+	}
 	handleChange = (e) => {
 		let formFields = { ...this.state.formFields };
 		formFields[e.target.name] = e.target.value;
@@ -126,7 +132,7 @@ class Modal extends React.Component {
 									<Button
 										color="success"
 										type="submit"
-										onClick={() => this.handleClose('modal')}
+										onClick={() => this.handleAccepted('modal')}
 										style={{ width: '100%' }}
 									>
 										SIGN ME UP!
