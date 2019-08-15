@@ -1,5 +1,5 @@
 import React from 'react';
-export const testimonials_text = [
+const testimonials_text_old = [
 	{
 		name: 'Athanasion Boutas',
 		body: function() {
@@ -205,5 +205,106 @@ export const testimonials_text = [
 		},
 		title: 'Skilled AMO Supervisor | Global Leader',
 		image: 'thieuBui.jpeg'
+	}
+];
+
+export const testimonials_text = [
+	{
+		name: 'Jeremy Grigg',
+		body: function() {
+			return (
+				<div>
+					I reached out to Caitlin for assistance with updating my resume and LinkedIn profile. The whole
+					process was seamless and the turnaround was quick! Caitlin was very thorough and made sure my resume
+					and profile was tailored to me personally. I highly recommend Caitlin's services. Well worth it!
+					<br />
+				</div>
+			);
+		},
+		title: 'Project Manager',
+		image: 'jeremyGrigg.jpeg'
+	},
+	{
+		name: 'Chris McCain',
+		body: function() {
+			return (
+				<div>
+					Caitlin is a fantastic choice if you are looking for an experienced resume writer. I had a seemingly
+					impossible task in turning a wide scope of experience into something a potential employer could
+					understand. Her writing skills allowed me to get interviews that I would not have gotten without the
+					help. She listens and provides relevant advice. Pick Caitlin, you won't regret it.
+					<br />
+				</div>
+			);
+		},
+		title: 'Chief Information Officer',
+		image: 'chrisMccain.jpeg'
+	},
+	{
+		name: 'Stephanie Sullins',
+		body: function() {
+			return (
+				<div>
+					Caitlin did an excellent job on my resume! Stayed in contact through the process and the
+					questionnaire she provided really makes you realize what important things were missing. I would
+					definitely recommend Caitlin for a resume writer! Great job!!
+					<br />
+				</div>
+			);
+		},
+		title: 'Clinical Manager',
+		image: 'stephanieSullins.jpeg'
+	},
+	{
+		name: 'Jeff Robinson',
+		body: function() {
+			return (
+				<div>
+					I can without question highly recommend Caitlin's services. The work she did updating resume and
+					profile has made a night and day difference. I think what is most valuable to me is the fact that
+					because Caitlin is a recruiter herself, she knows what it takes to look at your history and
+					experience and make it stand out to recruiters and hiring managers. Isn't that exactly what you're
+					after!
+					<br />
+				</div>
+			);
+		},
+		title: 'Cloud Solutions Account Executive',
+		image: 'jeffRobinson.jpeg'
+	},
+	{
+		name: 'Aaron Gonzalez',
+		body: function() {
+			return (
+				<div>
+					Caitlin has been amazing so far in helping me transition from college to career. She is so
+					knowledgeable when it comes to helping others like myself navigate this highly competitive job
+					market. She places a huge emphasis on networking as opposed to just relying on the "Apply & Pray"
+					method. In fact, her own opportunities have come via networking and she has been resourceful when it
+					comes to helping others in making key connections at potential employers. Caitlin has also gone the
+					extra mile in helping me in every stage of my post-grad career search so far. I'm proud to call her
+					my career coach and I strongly recommend that people in similar situations like myself look into a
+					very generous person that is Caitlin in helping you find the career of your dreams.
+					<br />
+				</div>
+			);
+		},
+		title: 'Digital Marketing Coordinator',
+		image: 'aaronGonzalez.jpeg'
+	},
+	{
+		name: 'Regina Stickney Sangines',
+		body: function() {
+			return (
+				<div>
+					Caitlin, was awesome. I was really happy with the job she did. She blew my mind with my resume, and
+					LinkedIn profile. She was always very attentive, easy to work with and understanding. Even now after
+					the work is done if I have any questions, I can contact her. Caitlin is great!!
+					<br />
+				</div>
+			);
+		},
+		title: 'International Marketing Coordinator',
+		image: 'reginaStickneySangines.jpeg'
 	}
 ];
