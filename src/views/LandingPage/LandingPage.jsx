@@ -53,10 +53,10 @@ class LandingPage extends React.Component {
 		if (signUpAccepted != true) {
 			let dayDiff = daysBetween(lastVisit, today);
 
-			if (lastVisit != null && dayDiff > 3) {
+			if (lastVisit != null && dayDiff > 2) {
 				this.setState({ showPopup: true });
 				localStorage.setItem('lastVisit', today.getTime());
-			} else if (lastVisit != null && dayDiff <= 3) {
+			} else if (lastVisit != null && dayDiff <= 2) {
 				this.setState({ showPopup: false });
 			} else {
 				this.setState({ showPopup: true });
